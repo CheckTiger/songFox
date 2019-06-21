@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">songFox</string>
+    <string name="app_name">雪狐</string>
+    <string name="technology_zone">技术天地</string>
+    <string name="technology_ui">界面UI</string>
+    <string name="technology_widget">炫酷控件</string>
+    <string name="technology_tools">常用工具</string>
+    <string name="technology_question">问题总结</string>
+    <!--menu-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nearOverText">即将售罄</string>
+    <string name="overText">已售罄</string>
+
 </resources>
