@@ -14,7 +14,7 @@
         tools:replace="android:appComponentFactory"
         android:appComponentFactory=""
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".UI.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

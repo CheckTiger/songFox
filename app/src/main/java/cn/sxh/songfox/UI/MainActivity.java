@@ -1,10 +1,12 @@
-package cn.sxh.songfox;
+package cn.sxh.songfox.UI;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.RadioGroup;
+
+import cn.sxh.songfox.R;
 
 
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
