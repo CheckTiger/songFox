@@ -1,4 +1,4 @@
-package cn.sxh.songfox.UI;
+package cn.sxh.songfox.mvp.UI;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
