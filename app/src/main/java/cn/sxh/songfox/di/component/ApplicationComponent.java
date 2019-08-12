@@ -1,5 +1,9 @@
 package cn.sxh.songfox.di.component;
 
+import android.content.Context;
+
+import cn.sxh.songfox.di.module.ApplicationModule;
+import cn.sxh.songfox.di.scope.ContextLife;
 import cn.sxh.songfox.di.scope.PerApp;
 import dagger.Component;
 
@@ -11,6 +15,8 @@ import dagger.Component;
  * @project-name: songFox
  */
 @PerApp
-@Component(modules = ApplicationComponent.class)
+@Component(modules = ApplicationModule.class)
 public interface ApplicationComponent {
+    @ContextLife("Application")
+    Context getApplication();
 }

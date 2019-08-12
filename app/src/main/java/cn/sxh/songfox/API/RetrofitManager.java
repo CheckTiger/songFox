@@ -20,6 +20,8 @@ public class RetrofitManager {
     private static OkHttpClient getOkHttpClient(){
         if (client == null) {
             synchronized (RetrofitManager.class) {
+                client = new OkHttpClient();
+//                client.newCall()
             }
         }
         return client;

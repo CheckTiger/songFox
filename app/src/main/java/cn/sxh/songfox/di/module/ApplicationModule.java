@@ -2,7 +2,7 @@ package cn.sxh.songfox.di.module;
 
 import android.content.Context;
 
-import cn.sxh.songfox.App;
+import cn.sxh.songfox.AppContext;
 import cn.sxh.songfox.di.scope.ContextLife;
 import cn.sxh.songfox.di.scope.PerApp;
 import dagger.Module;
@@ -17,13 +17,13 @@ import dagger.Provides;
  */
 @Module
 public class ApplicationModule {
-    private App mApp;
-    public ApplicationModule(App application){ mApp = application;}
+    private AppContext mAppContext;
+    public ApplicationModule(AppContext application){ mAppContext = application;}
 
     @Provides
     @PerApp
     @ContextLife("Application")
     public Context provideApplicationContext(){
-        return mApp.getApplicationContext();
+        return mAppContext.getApplicationContext();
     }
 }

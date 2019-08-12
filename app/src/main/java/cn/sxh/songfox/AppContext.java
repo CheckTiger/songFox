@@ -4,6 +4,8 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Handler;
 
+import com.squareup.leakcanary.RefWatcher;
+
 import cn.sxh.songfox.di.component.ApplicationComponent;
 
 /**
@@ -13,9 +15,13 @@ import cn.sxh.songfox.di.component.ApplicationComponent;
  * @time: 2019/7/26 0026 : 14 :01
  * @project-name: songFox
  */
-public class App extends Application {
-    private static Context mContext;
-    public static Handler handler;
-    public static int mainThreadId;
+public class AppContext extends Application {
+    private static AppContext intance;
     private ApplicationComponent mApplicationComponent;
+    private RefWatcher refWatcher;
+
+    public static RefWatcher getRefWatcher(Context context) {
+        AppContext appContext = (AppContext) context.getApplicationContext();
+        return appContext.refWatcher;
+    }
 }
