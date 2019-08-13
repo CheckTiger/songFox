@@ -13,16 +13,16 @@ import cn.sxh.songfox.base.BaseFragment;
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
  * @auther:snowFox
  * @Email:snowTigersong@gmail.com
- * @time: 2019/7/3 0003 : 19 :40
+ * @time: 2019/8/13 0013 : 15 :58
  * @project-name: songFox
  */
-public class UIViewFragment extends BaseFragment {
+public class CoolWidgetFragment extends BaseFragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         TextView textView = new TextView(getContext());
-        textView.setText("UI界面");
+        textView.setText("炫酷控件");
         return textView;
     }
     @Override

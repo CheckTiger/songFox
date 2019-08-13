@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="choose_picture">
+        <item>相册</item>
+        <item>相机</item>
+    </string-array>
+
+    <string-array name="order_titles">
+        <item>全部</item>
+        <item>知识学习</item>
+        <item>自定义</item>
+        <item>工具类</item>
+        <item>问题总结</item>
+    </string-array>
+
+    <string-array name="all_fragment_item">
+        <item>常用布局</item>
+        <item>常见控件</item>
+        <item>常见适配器</item>
+        <item>常见文件保存</item>
+        <item>多媒体使用</item>
+        <item>常见问题</item>
+        <item>列表优化</item>
+        <item>系统图片相机</item>
+        <item>常见提示框</item>
+        <item>系统权限</item>
+        <item>三级联动</item>
+    </string-array>
+    <string-array name="knowledge_fragment_item">
+        <item>view知识学习</item>
+        <item>view知识关于画笔Paint学习</item>
+    </string-array>
+    <string-array name="tools_fragment_item">
+        <item>本页面所有的工具类来自https://github.com/AbrahamCaiJin/CommonUtilLibrary</item>
+        <item>银行卡管理类</item>
+        <item>SharePreference缓存数据类</item>
+        <item>App数据清理工作的类</item>
+        <item>缓存工具类</item>
+        <item>App应用退出</item>
+        <item>管理和回收Activity</item>
+        <item>获取APP应用版本信息</item>
+        <item>软键盘管理类</item>
+        <item>系统日志输出工具类</item>
+        <item>App网络管理类</item>
+        <item>手机管理工具类</item>
+        <item>反射工具类</item>
+        <item>获取本地资源信息类</item>
+        <item>屏幕工具类</item>
+        <item>获取App应用系统基本信息</item>
+        <item>自定义Toast提示框</item>
+        <item>正则表达式</item>
+        <item>Wifi管理类</item>
+        <item>类型转化类</item>
+        <item>日期管理类</item>
+        <item>手机常用单位转换的辅助类</item>
+        <item>文件管理类</item>
+        <item>控件点击鲜果动画类</item>
+        <item>view管理类</item>
+        <item>提供APP应用计算，算法等</item>
+        <item>SpannableString工具类</item>
+        <item>Snack工具类</item>
+        <item>Picasso图片加载工具类</item>
+        <item>Glide图片加载类</item>
+        <item>Fresco图片加载类</item>
+        <item>管片管理类</item>
+        <item>资金运算工具类</item>
+        <item>WebService网络工具类</item>
+        <item>HttpUrlConnection网络工具类</item>
+        <item>字符串判断工具类</item>
+        <item>Json工具类</item>
+        <item>系统媒体管理工具类</item>
+        <item>GPS坐标转换工具类</item>
+        <item>程序崩溃处理类</item>
+        <item>html标签管理类</item>
+        <item>root权限管理类</item>
+        <item>快捷图标管理类</item>
+        <item>html标签管理类</item>
+        <item>单利工具类</item>
+        <item>WebView管理类</item>
+        <item>窗口管理类</item>
+        <item>pull解析xml管理类</item>
+        <item>压缩工具类</item>
+        <item>Fragment管理类</item>
+        <item>AES对称加密</item>
+        <item>DES对称加密</item>
+        <item>MD5加密</item>
+        <item>SHA-1加密不可逆</item>
+        <item>3DES对称加密</item>
+        <item>加密工具类</item>
+    </string-array>
+
+    <string-array name="all_defined_view">
+        <item>钟表控件</item>
+        <item>模仿小米手环App计步数据View</item>
+        <item>仿淘宝淘抢购进度条View</item>
+    </string-array>
+
+    <string-array name="order_titles_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <declare-styleable name="TaoBaoSaleProgressView">
+        <attr name="sideColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="sideWidth" format="dimension" />
+        <attr name="overText" format="string" />
+        <attr name="nearOverText" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="isNeedAnim" format="boolean" />
+    </declare-styleable>
+</resources>
