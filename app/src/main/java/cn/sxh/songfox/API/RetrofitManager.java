@@ -1,11 +1,11 @@
 package cn.sxh.songfox.API;
 
-import android.app.Application;
+import java.util.concurrent.TimeUnit;
 
-import java.io.File;
-
-import okhttp3.Cache;
 import okhttp3.OkHttpClient;
+import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * @package-name: cn.sxh.songfox.API
@@ -17,11 +17,30 @@ import okhttp3.OkHttpClient;
 public class RetrofitManager {
 
     private static volatile OkHttpClient client;
+    private static volatile songFoxApi foxApi;
+//    private static final String HOST = "http://v.juhe.cn/";
+    private static final String HOST = "http://120.27.248.248:8601/hexinifs/rs/cms/ad/";
+    public static songFoxApi getInstance(){
+        if (foxApi == null) {
+            Retrofit retrofit = new Retrofit.Builder()
+                    .client(getOkHttpClient())
+                    .baseUrl(HOST)
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+            foxApi = retrofit.create(songFoxApi.class);
+        }
+        return foxApi;
+    }
+
     private static OkHttpClient getOkHttpClient(){
         if (client == null) {
             synchronized (RetrofitManager.class) {
-                client = new OkHttpClient();
-//                client.newCall()
+                OkHttpClient.Builder builder = new OkHttpClient.Builder()
+                .connectTimeout(20*1000, TimeUnit.MILLISECONDS)
+                .readTimeout(20*1000,TimeUnit.MILLISECONDS)
+                .retryOnConnectionFailure(true);
+                client = builder.build();
             }
         }
         return client;
