@@ -1,5 +1,7 @@
 package cn.sxh.songfox.mvp.model.Impl;
 
+import android.annotation.SuppressLint;
+
 import cn.sxh.songfox.API.RetrofitManager;
 import cn.sxh.songfox.bean.FirstPageBean;
 import cn.sxh.songfox.mvp.model.UtilsFragmentModel;
@@ -19,6 +21,8 @@ public class UtilsFragmentModelImpl {
     public UtilsFragmentModelImpl() {
 
     }
+    @SuppressWarnings("ResultOfMethodCallIgnored")
+    @SuppressLint("CheckResult")
     public void getFirstPageData() {
         RetrofitManager.getInstance().getFirstPageData()
                 .subscribeOn(Schedulers.io())
