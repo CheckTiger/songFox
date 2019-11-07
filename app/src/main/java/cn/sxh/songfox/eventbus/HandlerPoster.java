@@ -3,6 +3,7 @@ package cn.sxh.songfox.eventbus;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.os.SystemClock;
 
 /**
  * @package-name: cn.sxh.songfox.eventbus
@@ -42,5 +43,31 @@ public class HandlerPoster extends Handler implements Poster{
     @Override
     public void handleMessage(Message msg) {
         boolean rescheduled = false;
+        try {
+            long started = SystemClock.uptimeMillis();
+            while (true) {
+                PendingPost pendingPost = queue.poll();
+                if (pendingPost == null) {
+                    synchronized (this) {
+                        pendingPost = queue.poll();
+                        if (pendingPost == null) {
+                            handlerActive = false;
+                            return;
+                        }
+                    }
+                }
+                eventBus.invokeSubscriber(pendingPost);
+                long timeInMethod = SystemClock.uptimeMillis() - started;
+                if (timeInMethod >= maxMillisInsideHandleMessage) {
+                    if (!sendMessage(obtainMessage())) {
+                        throw new EventBusException("Could not send handler message");
+                    }
+                    rescheduled = true;
+                    return;
+                }
+            }
+        }finally {
+            handlerActive = rescheduled;
+        }
     }
 }

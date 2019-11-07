@@ -15,10 +15,10 @@ final class Subscription {
 
     volatile boolean active;
 
-    Subscription(Object subscriber, SubscriberMethod subscriberMethod, boolean active) {
+    Subscription(Object subscriber, SubscriberMethod subscriberMethod) {
         this.subscriber = subscriber;
         this.subscriberMethod = subscriberMethod;
-        this.active = active;
+        this.active = true;
     }
 
     @Override
