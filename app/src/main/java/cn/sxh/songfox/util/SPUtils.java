@@ -14,6 +14,7 @@ import android.content.SharedPreferences.Editor;
 public class SPUtils {
 
 
+    public static final String SP_NAME_RUNTIME_PERMISSION = "SP_NAME_RUNTIME_PERMISSION";//权限管理
     /**
      * 保存String类型数据
      * @param spName 存储文件名
