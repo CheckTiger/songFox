@@ -1,18 +1,23 @@
 apply plugin: 'com.android.application'
-
+def config = rootProject.ext // 配置
 android {
-    compileSdkVersion 28
+    def build = config.build_version // 配置
+    compileSdkVersion build.compile_sdk
     defaultConfig {
-        applicationId "cn.sxh.songfox"
-        minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        applicationId build.applicationId
+        minSdkVersion build.min_sdk
+        targetSdkVersion build.target_sdk
+        versionCode build.versionCode
+        versionName build.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled config.minity_set.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled config.minity_set.debug
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
