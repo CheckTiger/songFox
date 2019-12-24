@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import cn.sxh.songfox.eventbus.meta.SubscriberInfo;
-import cn.sxh.songfox.eventbus.meta.SubscriberInfoIndex;
+import cn.sxh.eventbus.meta.SubscriberInfo;
+import cn.sxh.eventbus.meta.SubscriberInfoIndex;
 
 /**
  * @package-name: cn.sxh.songfox.eventbus

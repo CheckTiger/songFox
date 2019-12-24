@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import cn.sxh.songfox.eventbus.meta.SubscriberInfoIndex;
+import cn.sxh.eventbus.meta.SubscriberInfoIndex;
 
 /**
  * @package-name: cn.sxh.songfox.eventbus

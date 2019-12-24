@@ -1,6 +1,6 @@
 package cn.sxh.eventbus.meta;
 
-import cn.sxh.songfox.eventbus.SubscriberMethod;
+import cn.sxh.eventbus.SubscriberMethod;
 
 /**
  * @package-name: cn.sxh.songfox.eventbus.meta
