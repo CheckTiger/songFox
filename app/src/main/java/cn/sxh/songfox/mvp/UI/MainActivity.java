@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.tencent.bugly.beta.Beta;
+
 import cn.sxh.songfox.R;
 import cn.sxh.songfox.mvp.UI.fragment.CoolWidgetFragment;
 import cn.sxh.songfox.mvp.UI.fragment.QuestionFragment;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        Beta.checkUpgrade(false,false);
     }
 
     private void initView() {

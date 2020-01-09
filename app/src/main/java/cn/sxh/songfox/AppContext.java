@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import com.socks.library.KLog;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
+import com.tencent.bugly.Bugly;
 import com.tencent.bugly.crashreport.CrashReport;
 
 import java.io.BufferedReader;
@@ -46,7 +47,8 @@ public class AppContext extends Application {
         initStrictMode();
         KLog.init(BuildConfig.DEBUG);
         initApplicationComponent();
-        initCrashStrategy();//crash异常检测上报（腾讯开源库Bugly）
+//        initCrashStrategy();//crash异常检测上报（腾讯开源库Bugly）
+        Bugly.init(instance, "da9e68e13a", false);
     }
 
     private void initCrashStrategy() {
@@ -57,7 +59,8 @@ public class AppContext extends Application {
         // 设置是否为上报进程
         CrashReport.UserStrategy strategy = new CrashReport.UserStrategy(instance);
         strategy.setUploadProcess(processName == null || processName.equals(packageName));
-        CrashReport.initCrashReport(instance, "6cf1734e65", true,strategy);
+//        CrashReport.initCrashReport(instance, "6cf1734e65", true,strategy);
+        Bugly.init(instance, "da9e68e13a", false);
     }
 
     /**

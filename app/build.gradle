@@ -65,5 +65,5 @@ dependencies {
     api 'com.tonystark.android:socket-server:4.1.0'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation project(path: ':eventbus')
-    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
 }
