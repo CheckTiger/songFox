@@ -1,4 +1,4 @@
-package cn.sxh.songfox.mvp.UI.fragment;
+package cn.sxh.songfox.mvp.ui.fragment;
 
 import android.util.Log;
 import android.view.View;

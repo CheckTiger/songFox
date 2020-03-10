@@ -1,4 +1,4 @@
-package cn.sxh.songfox.mvp.UI.fragment;
+package cn.sxh.songfox.mvp.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
