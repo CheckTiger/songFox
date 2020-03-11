@@ -5,17 +5,10 @@ import android.content.Context;
 import android.os.Build;
 import android.os.StrictMode;
 import android.support.annotation.RequiresApi;
-import android.text.TextUtils;
 
 import com.socks.library.KLog;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
-import com.tencent.bugly.Bugly;
-import com.tencent.bugly.crashreport.CrashReport;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 
 import cn.sxh.songfox.di.component.ApplicationComponent;
 import cn.sxh.songfox.di.component.DaggerApplicationComponent;
@@ -47,49 +40,7 @@ public class AppContext extends Application {
         initStrictMode();
         KLog.init(BuildConfig.DEBUG);
         initApplicationComponent();
-//        initCrashStrategy();//crash异常检测上报（腾讯开源库Bugly）
-        Bugly.init(instance, "da9e68e13a", false);
-    }
-
-    private void initCrashStrategy() {
-        // 获取当前包名
-        String packageName = instance.getPackageName();
-        // 获取当前进程名
-        String processName = getProcessName(android.os.Process.myPid());
-        // 设置是否为上报进程
-        CrashReport.UserStrategy strategy = new CrashReport.UserStrategy(instance);
-        strategy.setUploadProcess(processName == null || processName.equals(packageName));
-//        CrashReport.initCrashReport(instance, "6cf1734e65", true,strategy);
-        Bugly.init(instance, "da9e68e13a", false);
-    }
-
-    /**
-     * 获取进程号对应的进程名
-     *
-     * @param pid 进程号
-     * @return 进程名
-     */
-    private static String getProcessName(int pid) {
-        BufferedReader reader = null;
-        try {
-            reader = new BufferedReader(new FileReader("/proc/" + pid + "/cmdline"));
-            String processName = reader.readLine();
-            if (!TextUtils.isEmpty(processName)) {
-                processName = processName.trim();
-            }
-            return processName;
-        } catch (Throwable throwable) {
-            throwable.printStackTrace();
-        } finally {
-            try {
-                if (reader != null) {
-                    reader.close();
-                }
-            } catch (IOException exception) {
-                exception.printStackTrace();
-            }
-        }
-        return null;
+//        Bugly.init(instance, "da9e68e13a", false);
     }
 
     private void initLeakCanary() {

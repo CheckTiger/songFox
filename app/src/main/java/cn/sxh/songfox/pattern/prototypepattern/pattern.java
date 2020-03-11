@@ -9,7 +9,6 @@ package cn.sxh.songfox.pattern.prototypepattern;
  */
 public class pattern {
 
-    static User user = new User();
     public static void main(String[] args) {
         WordDocument document = new WordDocument();
         document.setText("原型模式");
@@ -27,17 +26,8 @@ public class pattern {
         doc.showDocument();
         System.out.println("===================================");
         document.showDocument();
-        user.setName("44");
-        System.out.println(user.getName());
-        System.out.println("===================================");
-        user.setName("111");
-        System.out.println(user.getName());
-        System.out.println("===================================");
-        test(user);
-        System.out.println(user.getName());
+
     }
 
-    private static void test(User user) {
-        user.setName("22");
-    }
+
 }

@@ -6,6 +6,11 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="snowTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
     </style>
     <!-- my loading dialog -->
     <style name="MyDialogStyle">
@@ -18,5 +23,40 @@
         <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <declare-styleable name="NavigationTabStrip">
+        <attr name="nts_color" format="color"/>
+        <attr name="nts_size" format="dimension"/>
+        <attr name="nts_weight" format="dimension"/>
+        <attr name="nts_factor" format="float"/>
+        <attr name="nts_titles" format="reference"/>
+
+        <attr name="nts_type" format="enum">
+            <enum name="line" value="0"/>
+            <enum name="point" value="1"/>
+        </attr>
+        <attr name="nts_gravity" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+
+        <attr name="nts_typeface" format="string"/>
+        <attr name="nts_corners_radius" format="dimension"/>
+        <attr name="nts_animation_duration" format="integer"/>
+
+        <attr name="nts_inactive_color" format="color"/>
+        <attr name="nts_active_color" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ViewStudyStepOne">
+        <attr name="view_type" format="integer" />
+    </declare-styleable>
 
 </resources>
