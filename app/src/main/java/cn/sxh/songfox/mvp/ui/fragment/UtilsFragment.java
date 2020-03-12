@@ -4,7 +4,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.tencent.bugly.crashreport.CrashReport;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -56,7 +55,6 @@ public class UtilsFragment extends BaseFragment implements UtilsFragmentView {
     }
 
     private void gotoActivity(int position) {
-        CrashReport.testJavaCrash();
         Log.e(TAG, "--------->" + position);
         fragmentPresenter.getFirstPageData();
     }

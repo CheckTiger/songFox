@@ -4,7 +4,8 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Build;
 import android.os.StrictMode;
-import android.support.annotation.RequiresApi;
+
+import androidx.annotation.RequiresApi;
 
 import com.socks.library.KLog;
 import com.squareup.leakcanary.LeakCanary;
