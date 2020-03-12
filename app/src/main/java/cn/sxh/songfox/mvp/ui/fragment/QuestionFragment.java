@@ -1,8 +1,10 @@
 package cn.sxh.songfox.mvp.ui.fragment;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,16 +22,17 @@ import cn.sxh.songfox.base.BaseFragment;
  * @time: 2019/8/13 0013 : 15 :59
  * @project-name: songFox
  */
+@RequiresApi(api = Build.VERSION_CODES.P)
 public class QuestionFragment extends BaseFragment {
 
     private static final String TAG = "QuestionFragment";
-    private ListView mListView;
+    private RecyclerView mListView;
     private List<String> list = new ArrayList<>();
     private UtilsFragmentAdapter fragmentAdapter;
 
     @Override
     protected int getContentView() {
-        return R.layout.tools_fragment_layout;
+        return R.layout.question_fragment_layout;
     }
 
     @Override
@@ -42,9 +45,6 @@ public class QuestionFragment extends BaseFragment {
         list = Arrays.asList(AppContext.getInstance().
                 getResources().getStringArray(R.array.question_fragment_item));
         fragmentAdapter = new UtilsFragmentAdapter(getContext(),list);
-        mListView.setAdapter(fragmentAdapter);
-        fragmentAdapter.setOnLinearLayoutListener((holder, position)
-                -> gotoActivity(position));
     }
     private void gotoActivity(int position) {
         Log.e(TAG, "--------->" + position);

@@ -26,5 +26,8 @@ public class pattern {
         doc.showDocument();
         System.out.println("===================================");
         document.showDocument();
+
     }
+
+
 }

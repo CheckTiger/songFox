@@ -2,8 +2,9 @@ package cn.sxh.songfox;
 
 import android.app.Application;
 import android.content.Context;
-import android.os.Handler;
+import android.os.Build;
 import android.os.StrictMode;
+import android.support.annotation.RequiresApi;
 
 import com.socks.library.KLog;
 import com.squareup.leakcanary.LeakCanary;
@@ -20,6 +21,7 @@ import cn.sxh.songfox.di.module.ApplicationModule;
  * @time: 2019/7/26 0026 : 14 :01
  * @project-name: songFox
  */
+@RequiresApi(api = Build.VERSION_CODES.P)
 public class AppContext extends Application {
     private static AppContext instance;
     private ApplicationComponent mApplicationComponent;
@@ -38,6 +40,7 @@ public class AppContext extends Application {
         initStrictMode();
         KLog.init(BuildConfig.DEBUG);
         initApplicationComponent();
+//        Bugly.init(instance, "da9e68e13a", false);
     }
 
     private void initLeakCanary() {
@@ -62,19 +65,22 @@ public class AppContext extends Application {
                             .build());
         }
     }
+
     private RefWatcher installLeakCanary() {
         return RefWatcher.DISABLED;
     }
 
-    public static AppContext getInstance(){return instance;}
+    public static AppContext getInstance() {
+        return instance;
+    }
 
-    private void initApplicationComponent(){
+    private void initApplicationComponent() {
         mApplicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
                 .build();
     }
 
-    public ApplicationComponent getApplicationComponent(){
+    public ApplicationComponent getApplicationComponent() {
         return mApplicationComponent;
     }
 
