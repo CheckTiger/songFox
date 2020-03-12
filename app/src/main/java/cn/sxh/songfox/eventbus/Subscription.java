@@ -1,6 +1,6 @@
 package cn.sxh.songfox.eventbus;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 /**
  * @package-name: cn.sxh.songfox.eventbus

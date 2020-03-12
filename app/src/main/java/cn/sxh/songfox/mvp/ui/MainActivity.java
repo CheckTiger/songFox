@@ -1,10 +1,11 @@
 package cn.sxh.songfox.mvp.ui;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import cn.sxh.songfox.R;
 import cn.sxh.songfox.mvp.ui.fragment.CoolWidgetFragment;

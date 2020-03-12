@@ -1,9 +1,10 @@
 package cn.sxh.songfox.util;
 
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.util.Base64;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 
 import java.security.Key;
 
