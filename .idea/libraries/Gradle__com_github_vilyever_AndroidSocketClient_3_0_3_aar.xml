@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.vilyever:AndroidSocketClient:3.0.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5973ed226bc3c8c8976236a0ad13e185/jetified-AndroidSocketClient-3.0.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5973ed226bc3c8c8976236a0ad13e185/jetified-AndroidSocketClient-3.0.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle2.14.1-all/caches/transforms-2/files-2.1/0b3e87e0d90c488d0644cc49dca7e45e/jetified-AndroidSocketClient-3.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle2.14.1-all/caches/transforms-2/files-2.1/0b3e87e0d90c488d0644cc49dca7e45e/jetified-AndroidSocketClient-3.0.3/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.vilyever/AndroidSocketClient/3.0.3/dce8214028d36f2e3dbadc53f2b47c376dfba842/AndroidSocketClient-3.0.3-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle2.14.1-all/caches/modules-2/files-2.1/com.github.vilyever/AndroidSocketClient/3.0.3/dce8214028d36f2e3dbadc53f2b47c376dfba842/AndroidSocketClient-3.0.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,14 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.zhaokaiqiang.klog:library:1.4.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ba4d187660d0d877545dc5b9de243135/library-1.4.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ba4d187660d0d877545dc5b9de243135/library-1.4.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle2.14.1-all/caches/transforms-2/files-2.1/ba4d187660d0d877545dc5b9de243135/library-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle2.14.1-all/caches/transforms-2/files-2.1/ba4d187660d0d877545dc5b9de243135/library-1.4.0/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zhaokaiqiang.klog/library/1.4.0/b6fd956eaa8e06590e99239911370abb3cd9ee8/library-1.4.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle2.14.1-all/caches/modules-2/files-2.1/com.github.zhaokaiqiang.klog/library/1.4.0/b6fd956eaa8e06590e99239911370abb3cd9ee8/library-1.4.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zhaokaiqiang.klog/library/1.4.0/bae0373728679efa002bc39eac44b1067a492f9a/library-1.4.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle2.14.1-all/caches/modules-2/files-2.1/com.github.zhaokaiqiang.klog/library/1.4.0/bae0373728679efa002bc39eac44b1067a492f9a/library-1.4.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
