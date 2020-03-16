@@ -1,4 +1,4 @@
-package cn.sxh.songfox.API;
+package cn.sxh.songfox.api;
 
 import cn.sxh.songfox.bean.FirstPageBean;
 import io.reactivex.Observable;

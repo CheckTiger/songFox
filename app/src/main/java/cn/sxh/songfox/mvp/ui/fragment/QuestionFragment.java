@@ -44,7 +44,7 @@ public class QuestionFragment extends BaseFragment {
     @Override
     protected void initData() {
         list = Arrays.asList(AppContext.getInstance().
-                getResources().getStringArray(R.array.question_fragment_item));
+                getResources().getStringArray(R.array.tools_fragment_item));
         fragmentAdapter = new UtilsFragmentAdapter(getContext(),list);
     }
     private void gotoActivity(int position) {

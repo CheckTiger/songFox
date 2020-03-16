@@ -37,6 +37,7 @@ public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerVi
 
     @Override
     public void onBindViewHolder(@NonNull VerticalViewHolder holder, int position) {
+        holder.mTextView.setSelected(true);
         holder.mTextView.setText(mList.get(position));
     }
 

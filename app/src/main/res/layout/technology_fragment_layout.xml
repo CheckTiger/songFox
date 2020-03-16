@@ -4,6 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sw_40dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/Technology_fragment_listView"
         android:layout_width="match_parent"

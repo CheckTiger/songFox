@@ -7,7 +7,6 @@ import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -46,7 +45,7 @@ public class TechnologyFragment extends BaseFragment {
     @Override
     protected void initData() {
         List<String> list = Arrays.asList(AppContext.getInstance().
-                getResources().getStringArray(R.array.question_fragment_item));
+                getResources().getStringArray(R.array.technology_fragment_item));
         LinearLayoutManager managerVertical = new LinearLayoutManager(AppUtil.getContext());
         managerVertical.setOrientation(LinearLayoutManager.HORIZONTAL);
         mRecyclerView.setHasFixedSize(true);

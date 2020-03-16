@@ -114,61 +114,27 @@
         <attr name="isNeedAnim" format="boolean" />
     </declare-styleable>
 
-    <string-array name="question_fragment_item">
-        <item>Android嵌套H5页面内播放视频问题总结</item>
-        <item>SharePreference缓存数据类</item>
-        <item>App数据清理工作的类</item>
-        <item>缓存工具类</item>
-        <item>App应用退出</item>
-        <item>管理和回收Activity</item>
-        <item>获取APP应用版本信息</item>
-        <item>软键盘管理类</item>
-        <item>系统日志输出工具类</item>
-        <item>App网络管理类</item>
-        <item>手机管理工具类</item>
-        <item>反射工具类</item>
-        <item>获取本地资源信息类</item>
-        <item>屏幕工具类</item>
-        <item>获取App应用系统基本信息</item>
-        <item>自定义Toast提示框</item>
-        <item>正则表达式</item>
-        <item>Wifi管理类</item>
-        <item>类型转化类</item>
-        <item>日期管理类</item>
-        <item>手机常用单位转换的辅助类</item>
-        <item>文件管理类</item>
-        <item>控件点击鲜果动画类</item>
-        <item>view管理类</item>
-        <item>提供APP应用计算，算法等</item>
-        <item>SpannableString工具类</item>
-        <item>Snack工具类</item>
-        <item>Picasso图片加载工具类</item>
-        <item>Glide图片加载类</item>
-        <item>Fresco图片加载类</item>
-        <item>管片管理类</item>
-        <item>资金运算工具类</item>
-        <item>WebService网络工具类</item>
-        <item>HttpUrlConnection网络工具类</item>
-        <item>字符串判断工具类</item>
-        <item>Json工具类</item>
-        <item>系统媒体管理工具类</item>
-        <item>GPS坐标转换工具类</item>
-        <item>程序崩溃处理类</item>
-        <item>html标签管理类</item>
-        <item>root权限管理类</item>
-        <item>快捷图标管理类</item>
-        <item>html标签管理类</item>
-        <item>单利工具类</item>
-        <item>WebView管理类</item>
-        <item>窗口管理类</item>
-        <item>pull解析xml管理类</item>
-        <item>压缩工具类</item>
-        <item>Fragment管理类</item>
-        <item>AES对称加密</item>
-        <item>DES对称加密</item>
-        <item>MD5加密</item>
-        <item>SHA-1加密不可逆</item>
-        <item>3DES对称加密</item>
-        <item>加密工具类</item>
+    <string-array name="technology_fragment_item">
+        <item>安卓自定义View基础 - 坐标系</item>
+        <item>安卓自定义View基础 - 角度弧度</item>
+        <item>安卓自定义View基础 - 颜色</item>
+        <item>安卓自定义View进阶 - 分类和流程</item>
+        <item>安卓自定义View进阶 - Canvas之绘制图形</item>
+        <item>安卓自定义View进阶 - Canvas之画布操作</item>
+        <item>安卓自定义View进阶 - Canvas之图片文字</item>
+        <item>安卓自定义View进阶 - Path之基本操作</item>
+        <item>安卓自定义View进阶 - Path之贝塞尔曲线</item>
+        <item>安卓自定义View进阶 - Path完结篇</item>
+        <item>安卓自定义View进阶 - PathMeasure</item>
+        <item>安卓自定义View进阶 - Matrix原理</item>
+        <item>安卓自定义View进阶 - Matrix详解</item>
+        <item>安卓自定义View进阶 - Matrix Camera</item>
+        <item>安卓自定义View进阶 - 事件分发机制原理</item>
+        <item>安卓自定义View进阶 - 事件分发机制详解</item>
+        <item>安卓自定义View进阶 - MotionEvent详解</item>
+        <item>安卓自定义View进阶 - 特殊控件的事件处理方案</item>
+        <item>安卓自定义View进阶 - 多点触控详解</item>
+        <item>安卓自定义View进阶 - 手势检测(GestureDecetor)</item>
+        <item>安卓自定义View进阶 - 缩放手势检测(ScaleGestureDecetor)</item>
     </string-array>
 </resources>

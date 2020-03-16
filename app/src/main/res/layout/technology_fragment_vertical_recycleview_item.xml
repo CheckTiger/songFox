@@ -3,8 +3,8 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_gravity="center"
-    android:layout_width="200dp"
-    android:layout_height="100dp"
+    android:layout_width="@dimen/sw_150dp"
+    android:layout_height="@dimen/sw_80dp"
     android:layout_margin="8dp"
     android:background="@color/Beige">
 
@@ -12,6 +12,9 @@
         android:id="@+id/tv"
         android:textColor="@color/Black"
         android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
