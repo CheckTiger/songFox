@@ -1,1 +1,1 @@
-include ':app', ':sxh-eventbus', ':sxh-animation'
+include ':app', ':sxh-eventbus', ':sxh-animation', ':sxh-technology', ':sxh-resource'
