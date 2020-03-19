@@ -6,11 +6,11 @@
     android:layout_width="@dimen/sw_150dp"
     android:layout_height="@dimen/sw_80dp"
     android:layout_margin="8dp"
-    android:background="@color/Beige">
+    android:background="@color/color_type_help">
 
     <TextView
         android:id="@+id/tv"
-        android:textColor="@color/Black"
+        android:textColor="@color/primary_text"
         android:gravity="center"
         android:singleLine="true"
         android:ellipsize="marquee"
