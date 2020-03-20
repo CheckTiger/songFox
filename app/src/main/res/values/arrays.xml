@@ -137,4 +137,13 @@
         <item>安卓自定义View进阶 - 手势检测(GestureDecetor)</item>
         <item>安卓自定义View进阶 - 缩放手势检测(ScaleGestureDecetor)</item>
     </string-array>
+
+    <string-array name="tab_layout_titles">
+        <item>View</item>
+        <item>动画</item>
+        <item>网络</item>
+        <item>图片</item>
+        <item>性能</item>
+    </string-array>
+
 </resources>

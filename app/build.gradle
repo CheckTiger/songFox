@@ -33,6 +33,7 @@ dependencies {
     implementation config.constraint
     testImplementation config.junit
     androidTestImplementation config.espresso
+    androidTestImplementation config.testrunner
 
     //
     api project(path: ':sxh-technology')

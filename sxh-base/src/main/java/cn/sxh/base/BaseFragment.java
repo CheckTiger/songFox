@@ -1,4 +1,4 @@
-package cn.sxh.songfox.base;
+package cn.sxh.base;
 
 import android.os.Bundle;
 import android.util.Log;

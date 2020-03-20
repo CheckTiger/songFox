@@ -4,17 +4,20 @@ import android.os.Build;
 import android.view.View;
 
 import androidx.annotation.RequiresApi;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import cn.sxh.base.BaseFragment;
 import cn.sxh.songfox.AppContext;
 import cn.sxh.songfox.R;
-import cn.sxh.songfox.adapter.RecyclerViewVerticalAdapter;
-import cn.sxh.songfox.base.BaseFragment;
-import cn.sxh.songfox.util.AppUtil;
+import cn.sxh.songfox.adapter.TechnologyFragmentAdapter;
+import cn.sxh.technology.ViewFragment;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
@@ -28,8 +31,8 @@ import cn.sxh.songfox.util.AppUtil;
 public class TechnologyFragment extends BaseFragment {
 
 
-    private RecyclerView mRecyclerView;
-    private RecyclerViewVerticalAdapter recyclerViewVerticalAdapter;
+    private TabLayout mTabLayout;
+    private ViewPager mViewPager;
 
     @Override
     protected int getContentView() {
@@ -38,19 +41,29 @@ public class TechnologyFragment extends BaseFragment {
 
     @Override
     protected void initUI(View view) {
-        mRecyclerView = view.findViewById(R.id.Technology_fragment_listView);
-        recyclerViewVerticalAdapter = new RecyclerViewVerticalAdapter(AppUtil.getContext());
+        mTabLayout = view.findViewById(R.id.tabLayout);
+        mViewPager = view.findViewById(R.id.viewPager);
     }
 
     @Override
     protected void initData() {
-        List<String> list = Arrays.asList(AppContext.getInstance().
-                getResources().getStringArray(R.array.technology_fragment_item));
-        LinearLayoutManager managerVertical = new LinearLayoutManager(AppUtil.getContext());
-        managerVertical.setOrientation(LinearLayoutManager.HORIZONTAL);
-        mRecyclerView.setHasFixedSize(true);
-        mRecyclerView.setLayoutManager(managerVertical);
-        mRecyclerView.setAdapter(recyclerViewVerticalAdapter);
-        recyclerViewVerticalAdapter.setList(list);
+        initTabTitlesAndFragment();
+    }
+
+
+    private void initTabTitlesAndFragment() {
+        List<String> tabTitle = Arrays.asList(AppContext.getInstance().
+                getResources().getStringArray(R.array.tab_layout_titles));
+        List<Fragment> fragmentList = new ArrayList<>();
+        fragmentList.add(new ViewFragment());
+        fragmentList.add(new UIViewFragment());
+        fragmentList.add(new QuestionFragment());
+        fragmentList.add(new UtilsFragment());
+        fragmentList.add(new UtilsFragment());
+        TechnologyFragmentAdapter myFragmentAdapter = new TechnologyFragmentAdapter(getFragmentManager(), fragmentList, tabTitle);
+
+        mViewPager.setAdapter(myFragmentAdapter);
+
+        mTabLayout.setupWithViewPager(mViewPager);
     }
 }

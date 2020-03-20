@@ -36,6 +36,7 @@ ext {
             // ------------- Test dependencies -------------
             junit               : 'junit:junit:4.12',
             testjunit           : 'androidx.test.ext:junit:1.1.1',
+            testrunner          : 'androidx.test:runner:1.2.0',
             espresso            : 'androidx.test.espresso:espresso-core:3.2.0']
 
 }

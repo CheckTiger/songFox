@@ -12,7 +12,7 @@ import java.util.List;
 import cn.sxh.songfox.AppContext;
 import cn.sxh.songfox.R;
 import cn.sxh.songfox.adapter.UtilsFragmentAdapter;
-import cn.sxh.songfox.base.BaseFragment;
+import cn.sxh.base.BaseFragment;
 import cn.sxh.songfox.base.UtilsFragmentView;
 import cn.sxh.songfox.bean.FirstPageBean;
 import cn.sxh.songfox.mvp.presenter.UtilsFragmentPresenter;

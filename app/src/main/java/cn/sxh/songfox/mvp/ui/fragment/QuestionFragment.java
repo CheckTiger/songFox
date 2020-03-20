@@ -14,7 +14,7 @@ import java.util.List;
 import cn.sxh.songfox.AppContext;
 import cn.sxh.songfox.R;
 import cn.sxh.songfox.adapter.UtilsFragmentAdapter;
-import cn.sxh.songfox.base.BaseFragment;
+import cn.sxh.base.BaseFragment;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment

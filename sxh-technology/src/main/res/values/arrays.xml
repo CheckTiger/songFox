@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="technology_fragment_item">
+        <item>安卓自定义View基础 - 坐标系</item>
+        <item>安卓自定义View基础 - 角度弧度</item>
+        <item>安卓自定义View基础 - 颜色</item>
+        <item>安卓自定义View进阶 - 分类和流程</item>
+        <item>安卓自定义View进阶 - Canvas之绘制图形</item>
+        <item>安卓自定义View进阶 - Canvas之画布操作</item>
+        <item>安卓自定义View进阶 - Canvas之图片文字</item>
+        <item>安卓自定义View进阶 - Path之基本操作</item>
+        <item>安卓自定义View进阶 - Path之贝塞尔曲线</item>
+        <item>安卓自定义View进阶 - Path完结篇</item>
+        <item>安卓自定义View进阶 - PathMeasure</item>
+        <item>安卓自定义View进阶 - Matrix原理</item>
+        <item>安卓自定义View进阶 - Matrix详解</item>
+        <item>安卓自定义View进阶 - Matrix Camera</item>
+        <item>安卓自定义View进阶 - 事件分发机制原理</item>
+        <item>安卓自定义View进阶 - 事件分发机制详解</item>
+        <item>安卓自定义View进阶 - MotionEvent详解</item>
+        <item>安卓自定义View进阶 - 特殊控件的事件处理方案</item>
+        <item>安卓自定义View进阶 - 多点触控详解</item>
+        <item>安卓自定义View进阶 - 手势检测(GestureDecetor)</item>
+        <item>安卓自定义View进阶 - 缩放手势检测(ScaleGestureDecetor)</item>
+    </string-array>
+</resources>

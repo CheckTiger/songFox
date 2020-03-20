@@ -35,4 +35,6 @@ dependencies {
     androidTestImplementation config.espresso
 
     api project(path: ':sxh-resource')
+    api project(path: ':sxh-base')
+    implementation config.recyclerview
 }

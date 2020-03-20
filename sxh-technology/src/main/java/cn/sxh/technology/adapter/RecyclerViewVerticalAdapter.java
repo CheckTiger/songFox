@@ -1,4 +1,4 @@
-package cn.sxh.songfox.adapter;
+package cn.sxh.technology.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.sxh.songfox.R;
+import cn.sxh.technology.R;
 
 public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerViewVerticalAdapter.VerticalViewHolder> {
 
@@ -31,12 +31,12 @@ public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerVi
     @NonNull
     @Override
     public VerticalViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.technology_fragment_vertical_recycleview_item, parent, false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.view_fragment_vertical_recycleview_item, parent, false);
         return new VerticalViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull VerticalViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull VerticalViewHolder holder, final int position) {
         holder.mTextView.setSelected(true);
         holder.mTextView.setText(mList.get(position));
     }

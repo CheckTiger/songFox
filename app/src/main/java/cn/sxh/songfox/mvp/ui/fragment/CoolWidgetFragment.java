@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
-import cn.sxh.songfox.base.BaseFragment;
+import cn.sxh.base.BaseFragment;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
