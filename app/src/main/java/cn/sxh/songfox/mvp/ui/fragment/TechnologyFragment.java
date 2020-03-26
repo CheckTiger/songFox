@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import cn.sxh.animation.one.AnimationFragment;
 import cn.sxh.base.BaseFragment;
 import cn.sxh.songfox.AppContext;
 import cn.sxh.songfox.R;
@@ -56,7 +57,7 @@ public class TechnologyFragment extends BaseFragment {
                 getResources().getStringArray(R.array.tab_layout_titles));
         List<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(new ViewFragment());
-        fragmentList.add(new UIViewFragment());
+        fragmentList.add(new AnimationFragment());
         fragmentList.add(new QuestionFragment());
         fragmentList.add(new UtilsFragment());
         fragmentList.add(new UtilsFragment());

@@ -1,4 +1,4 @@
-package cn.sxh.animation;
+package cn.sxh.technology;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

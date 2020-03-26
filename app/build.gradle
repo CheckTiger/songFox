@@ -37,6 +37,7 @@ dependencies {
 
     //
     api project(path: ':sxh-technology')
+    api project(path: ':sxh-animation')
 
     testImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
     debugImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'

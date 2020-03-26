@@ -1,6 +1,9 @@
 package cn.sxh.technology;
 
 import android.os.Build;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.annotation.RequiresApi;
@@ -11,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import cn.sxh.base.BaseFragment;
-import cn.sxh.technology.adapter.RecyclerViewVerticalAdapter;
+import cn.sxh.base.RecyclerViewVerticalAdapter;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
@@ -37,6 +40,44 @@ public class ViewFragment extends BaseFragment {
     protected void initUI(View view) {
         mRecyclerView = view.findViewById(R.id.view_fragment_listView);
         recyclerViewVerticalAdapter = new RecyclerViewVerticalAdapter(getContext());
+        GestureDetector.SimpleOnGestureListener onGestureListener = new GestureDetector.SimpleOnGestureListener(){
+            @Override
+            public boolean onDoubleTap(MotionEvent e) {
+                Log.e("sxh","第二次按下时触发");
+                return super.onDoubleTap(e);
+            }
+
+            @Override
+            public boolean onDoubleTapEvent(MotionEvent e) {
+                switch (e.getActionMasked()) {
+                    case MotionEvent.ACTION_UP:
+                        Log.e("sxh","第二次抬起时触发");
+                        break;
+                }
+                return super.onDoubleTapEvent(e);
+            }
+
+            @Override
+            public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+                float x = e1.getX();
+                float y = e1.getY();
+                float x1 = e2.getX();
+                float y1 = e2.getY();
+                Log.e("sxh","第一次按下时触发"+x);
+                Log.e("sxh","第一次按下时触发"+y);
+                Log.e("sxh","第二次抬起时触发"+x1);
+                Log.e("sxh","第二次抬起时触发"+y1);
+                return super.onFling(e1, e2, velocityX, velocityY);
+            }
+        };
+
+        final GestureDetector gestureDetector = new GestureDetector(getContext(), onGestureListener);
+        mRecyclerView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                return gestureDetector.onTouchEvent(motionEvent);
+            }
+        });
     }
 
 

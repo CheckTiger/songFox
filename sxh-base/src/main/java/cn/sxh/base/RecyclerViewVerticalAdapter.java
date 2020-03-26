@@ -1,4 +1,4 @@
-package cn.sxh.technology.adapter;
+package cn.sxh.base;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,8 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import cn.sxh.technology.R;
 
 public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerViewVerticalAdapter.VerticalViewHolder> {
 

@@ -33,4 +33,9 @@ dependencies {
     testImplementation config.junit
     androidTestImplementation config.testjunit
     androidTestImplementation config.espresso
+
+
+    api project(path: ':sxh-resource')
+    api project(path: ':sxh-base')
+    implementation config.recyclerview
 }
