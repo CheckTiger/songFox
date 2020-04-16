@@ -5,12 +5,15 @@
     android:layout_height="match_parent">
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/view_fragment_listView"
+    <TextView
+        android:id="@+id/animation_fragment_listView"
+        android:text="坐标系详解"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="@dimen/dp_45"/>
     <FrameLayout
-        android:id="@+id/view_content"
+        android:id="@+id/animation_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

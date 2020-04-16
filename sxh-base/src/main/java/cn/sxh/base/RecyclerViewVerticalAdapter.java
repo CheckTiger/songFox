@@ -37,6 +37,14 @@ public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerVi
     public void onBindViewHolder(@NonNull VerticalViewHolder holder, final int position) {
         holder.mTextView.setSelected(true);
         holder.mTextView.setText(mList.get(position));
+        holder.mTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (listener != null) {
+                    listener.dispatchListener(position);
+                }
+            }
+        });
     }
 
 
@@ -52,6 +60,16 @@ public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerVi
             super(itemView);
             mTextView = itemView.findViewById(R.id.tv);
         }
+    }
+
+    public interface OnRecyelerViewItemClickListener{
+        void dispatchListener(int position);
+    }
+
+    public OnRecyelerViewItemClickListener listener;
+
+    public void setOnRecyelerViewItemClickListener(OnRecyelerViewItemClickListener onRecyelerViewItemClickListener) {
+        this.listener = onRecyelerViewItemClickListener;
     }
 
 }

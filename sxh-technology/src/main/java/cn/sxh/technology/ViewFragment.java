@@ -5,8 +5,11 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,11 +28,13 @@ import cn.sxh.base.RecyclerViewVerticalAdapter;
  */
 
 @RequiresApi(api = Build.VERSION_CODES.P)
-public class ViewFragment extends BaseFragment {
+public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAdapter.OnRecyelerViewItemClickListener {
 
 
     private RecyclerView mRecyclerView;
     private RecyclerViewVerticalAdapter recyclerViewVerticalAdapter;
+
+    private oneFragment fragment;
 
     @Override
     protected int getContentView() {
@@ -40,44 +45,7 @@ public class ViewFragment extends BaseFragment {
     protected void initUI(View view) {
         mRecyclerView = view.findViewById(R.id.view_fragment_listView);
         recyclerViewVerticalAdapter = new RecyclerViewVerticalAdapter(getContext());
-        GestureDetector.SimpleOnGestureListener onGestureListener = new GestureDetector.SimpleOnGestureListener(){
-            @Override
-            public boolean onDoubleTap(MotionEvent e) {
-                Log.e("sxh","第二次按下时触发");
-                return super.onDoubleTap(e);
-            }
-
-            @Override
-            public boolean onDoubleTapEvent(MotionEvent e) {
-                switch (e.getActionMasked()) {
-                    case MotionEvent.ACTION_UP:
-                        Log.e("sxh","第二次抬起时触发");
-                        break;
-                }
-                return super.onDoubleTapEvent(e);
-            }
-
-            @Override
-            public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-                float x = e1.getX();
-                float y = e1.getY();
-                float x1 = e2.getX();
-                float y1 = e2.getY();
-                Log.e("sxh","第一次按下时触发"+x);
-                Log.e("sxh","第一次按下时触发"+y);
-                Log.e("sxh","第二次抬起时触发"+x1);
-                Log.e("sxh","第二次抬起时触发"+y1);
-                return super.onFling(e1, e2, velocityX, velocityY);
-            }
-        };
-
-        final GestureDetector gestureDetector = new GestureDetector(getContext(), onGestureListener);
-        mRecyclerView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                return gestureDetector.onTouchEvent(motionEvent);
-            }
-        });
+        recyclerViewVerticalAdapter.setOnRecyelerViewItemClickListener(this);
     }
 
 
@@ -92,4 +60,31 @@ public class ViewFragment extends BaseFragment {
         mRecyclerView.setAdapter(recyclerViewVerticalAdapter);
         recyclerViewVerticalAdapter.setList(list);
     }
+
+    @Override
+    public void dispatchListener(int position) {
+        Log.e("sxh", "点击的item位置：" + position);
+        FragmentManager manager = getChildFragmentManager();
+        FragmentTransaction fragmentTransaction = manager.beginTransaction();
+        hideTagFragment(fragmentTransaction);
+        switch (position) {
+            case 0:
+                if (fragment == null) {
+                    fragment = new oneFragment();
+                    fragmentTransaction.add(R.id.view_content, fragment);
+                } else {
+                    fragmentTransaction.show(fragment);
+                }
+                break;
+        }
+        fragmentTransaction.commit();
+    }
+
+
+    private void hideTagFragment(FragmentTransaction transaction) {
+        if (fragment != null) {
+            transaction.hide(fragment);
+        }
+    }
+
 }

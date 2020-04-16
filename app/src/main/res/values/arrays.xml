@@ -140,6 +140,7 @@
 
     <string-array name="tab_layout_titles">
         <item>View</item>
+        <item>开源框架</item>
         <item>动画</item>
         <item>网络</item>
         <item>图片</item>

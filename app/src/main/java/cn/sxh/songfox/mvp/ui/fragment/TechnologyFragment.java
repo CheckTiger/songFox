@@ -57,6 +57,7 @@ public class TechnologyFragment extends BaseFragment {
                 getResources().getStringArray(R.array.tab_layout_titles));
         List<Fragment> fragmentList = new ArrayList<>();
         fragmentList.add(new ViewFragment());
+        fragmentList.add(new UtilsFragment());
         fragmentList.add(new AnimationFragment());
         fragmentList.add(new QuestionFragment());
         fragmentList.add(new UtilsFragment());

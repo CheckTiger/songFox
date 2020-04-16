@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="common_red">#EB0000</color>
+    <color name="bottom_icon_up">#b5b5b5</color>
+    <color name="common_line_two">#dcdcdc</color>
+    <color name="white">#ffffffff</color>
+    <color name="xml_color_text_normal_style">#72AC37</color>
+    <color name="primary_text">#de000000</color>
+
+    <color name="color_type_info">#79b3e4</color>
+    <color name="color_type_help">#e8bd4b</color>
+    <color name="color_type_wrong">#de2b07</color>
+    <color name="color_type_warning">#e8bd4b</color>
+    <color name="color_type_style">#72AC37</color>
+    <color name="color_type_success">#90b06e</color>
+
+    <!--系统全局颜色-->
+    <color name="xml_color_text_normal_gray">#939393</color><!--普通字体灰色-->
+    <color name="xml_color_text_normal_gray_cd">#cdcdcd</color><!--更淡字体灰色&间隔线灰色-->
+</resources>
