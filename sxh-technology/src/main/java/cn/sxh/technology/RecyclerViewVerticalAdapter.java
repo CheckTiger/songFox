@@ -1,4 +1,4 @@
-package cn.sxh.base;
+package cn.sxh.technology;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -32,7 +32,11 @@ public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerVi
     @NonNull
     @Override
     public VerticalViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        KLog.e("------"+viewType);
         View view = LayoutInflater.from(mContext).inflate(R.layout.view_fragment_vertical_recycleview_item, parent, false);
+        if (ItemType == 1) {
+            view = LayoutInflater.from(mContext).inflate(R.layout.open_source_fragment_vertical_recycleview_item, parent, false);
+        }
         return new VerticalViewHolder(view);
     }
 

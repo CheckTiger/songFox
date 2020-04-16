@@ -2,10 +2,7 @@ package cn.sxh.technology;
 
 import android.os.Build;
 import android.util.Log;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentManager;
@@ -16,8 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.Arrays;
 import java.util.List;
 
-import cn.sxh.base.BaseFragment;
 import cn.sxh.base.RecyclerViewVerticalAdapter;
+
+import cn.sxh.base.BaseFragment;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
@@ -28,7 +26,7 @@ import cn.sxh.base.RecyclerViewVerticalAdapter;
  */
 
 @RequiresApi(api = Build.VERSION_CODES.P)
-public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAdapter.OnRecyelerViewItemClickListener {
+public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAdapter.OnRecyclerViewItemClickListener {
 
 
     private RecyclerView mRecyclerView;
@@ -45,7 +43,7 @@ public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAd
     protected void initUI(View view) {
         mRecyclerView = view.findViewById(R.id.view_fragment_listView);
         recyclerViewVerticalAdapter = new RecyclerViewVerticalAdapter(getContext());
-        recyclerViewVerticalAdapter.setOnRecyelerViewItemClickListener(this);
+        recyclerViewVerticalAdapter.setOnRecyclerViewItemClickListener(this);
     }
 
 
