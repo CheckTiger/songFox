@@ -22,6 +22,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
 
 }
 
@@ -37,4 +41,5 @@ dependencies {
     api project(path: ':sxh-resource')
     api project(path: ':sxh-base')
     implementation config.recyclerview
+    implementation config.pdfView
 }
