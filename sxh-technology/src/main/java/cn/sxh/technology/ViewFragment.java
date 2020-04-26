@@ -60,21 +60,16 @@ public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAd
     }
 
     @Override
-    public void dispatchListener(int position) {
-        Log.e("sxh", "点击的item位置：" + position);
+    public void dispatchListener(int position,String title) {
+        Log.e("sxh", "========================" + position);
+        Log.e("sxh", "========================" + title);
         FragmentManager manager = getChildFragmentManager();
         FragmentTransaction fragmentTransaction = manager.beginTransaction();
         hideTagFragment(fragmentTransaction);
-        switch (position) {
-            case 0:
-                if (fragment == null) {
-                    fragment = new oneFragment();
-                    fragmentTransaction.add(R.id.view_content, fragment);
-                } else {
-                    fragmentTransaction.show(fragment);
-                }
-                break;
-        }
+        fragment = null;
+        fragment = new oneFragment(title,position);
+        fragmentTransaction.add(R.id.view_content, fragment);
+        fragmentTransaction.show(fragment);
         fragmentTransaction.commit();
     }
 

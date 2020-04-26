@@ -9,6 +9,13 @@ public class oneFragment extends BaseFragment {
 
 
     private TextView mTextView;
+    private String title;
+    private int mIndex;
+
+    public oneFragment(String title,int index) {
+        this.title = title;
+        this.mIndex = index;
+    }
 
     @Override
     protected int getContentView() {
@@ -17,12 +24,12 @@ public class oneFragment extends BaseFragment {
 
     @Override
     protected void initUI(View view) {
-
+        mTextView = view.findViewById(R.id.animation_fragment_listView);
     }
 
     @Override
     protected void initData() {
-
+        mTextView.setText(title);
     }
 
 }
