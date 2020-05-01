@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_45"/>
     <com.github.barteksc.pdfviewer.PDFView
-        android:id="@+id/animation_content"
+        android:id="@+id/pdf_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
