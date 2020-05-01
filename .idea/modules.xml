@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/sxh-eventbus/sxh-eventbus.iml" filepath="$PROJECT_DIR$/sxh-eventbus/sxh-eventbus.iml" group="songFox/sxh-eventbus" />
       <module fileurl="file://$PROJECT_DIR$/sxh-resource/sxh-resource.iml" filepath="$PROJECT_DIR$/sxh-resource/sxh-resource.iml" group="songFox/sxh-resource" />
       <module fileurl="file://$PROJECT_DIR$/sxh-technology/sxh-technology.iml" filepath="$PROJECT_DIR$/sxh-technology/sxh-technology.iml" group="songFox/sxh-technology" />
+      <module fileurl="file://$PROJECT_DIR$/sxh-utils/sxh-utils.iml" filepath="$PROJECT_DIR$/sxh-utils/sxh-utils.iml" group="songFox/sxh-utils" />
     </modules>
   </component>
 </project>

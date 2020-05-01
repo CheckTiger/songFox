@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/sxh-eventbus" />
             <option value="$PROJECT_DIR$/sxh-resource" />
             <option value="$PROJECT_DIR$/sxh-technology" />
+            <option value="$PROJECT_DIR$/sxh-utils" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
