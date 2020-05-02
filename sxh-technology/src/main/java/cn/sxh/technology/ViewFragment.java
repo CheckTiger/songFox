@@ -10,12 +10,15 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.socks.library.KLog;
+
 import java.util.Arrays;
 import java.util.List;
 
 import cn.sxh.base.RecyclerViewVerticalAdapter;
 
 import cn.sxh.base.BaseFragment;
+import cn.sxh.utils.BankCheckUtil;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
@@ -71,6 +74,7 @@ public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAd
         fragmentTransaction.add(R.id.view_content, fragment);
         fragmentTransaction.show(fragment);
         fragmentTransaction.commit();
+        KLog.e("sxh","====="+BankCheckUtil.checkBankcard("410327198905012014"));
     }
 
 

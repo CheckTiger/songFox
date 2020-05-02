@@ -15,16 +15,11 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-    }
-    compileOptions {
-        sourceCompatibility = 1.8
-        targetCompatibility = 1.8
     }
 
 }
@@ -35,10 +30,8 @@ dependencies {
 
     implementation config.appcompat
     testImplementation config.junit
-    androidTestImplementation config.testjunit
-    androidTestImplementation config.espresso
 
-    api project(path: ':sxh-common')
-    implementation config.recyclerview
-    implementation config.pdfView
+    api project(path: ':sxh-base')
+    api project(path: ':sxh-resource')
+    api project(path: ':sxh-utils')
 }
