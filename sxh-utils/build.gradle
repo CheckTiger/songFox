@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    def config = rootProject.ext.android // 配置
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    def config = rootProject.ext.deps // 配置
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation config.appcompat
+    testImplementation config.junit
+}

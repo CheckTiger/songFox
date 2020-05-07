@@ -9,12 +9,8 @@
         android:id="@+id/view_fragment_listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
-    <cn.sxh.technology.RadarView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"/>
-
-    <cn.sxh.technology.LoveView
+    <FrameLayout
+        android:id="@+id/view_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

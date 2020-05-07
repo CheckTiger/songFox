@@ -33,6 +33,7 @@ ext {
             progress            : "com.pnikosis:materialish-progress:1.0",
             flycoDialog         : "com.flyco.dialog:FlycoDialog_Lib:1.1.0@aar",
             flycoAnimation      : "com.flyco.animation:FlycoAnimation_Lib:1.0.0@aar",
+            pdfView             : "com.github.barteksc:android-pdf-viewer:2.8.2",
             // ------------- Test dependencies -------------
             junit               : 'junit:junit:4.12',
             testjunit           : 'androidx.test.ext:junit:1.1.1',

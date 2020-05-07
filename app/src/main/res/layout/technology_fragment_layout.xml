@@ -9,17 +9,17 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/sw_40dp"
-        android:background="@color/colorAccent"
+        android:layout_height="@dimen/dp_40"
         app:tabBackground="@color/colorPrimary"
         app:tabIndicatorHeight="2dp"
         app:tabSelectedTextColor="#ffffff"
         app:tabIndicatorColor="@color/colorAccent"
-        app:tabMode="fixed"/>
+        app:tabMode="scrollable"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"/>
 
 </LinearLayout>

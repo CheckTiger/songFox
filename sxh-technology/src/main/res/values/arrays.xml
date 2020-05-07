@@ -23,4 +23,15 @@
         <item>安卓自定义View进阶 - 手势检测(GestureDecetor)</item>
         <item>安卓自定义View进阶 - 缩放手势检测(ScaleGestureDecetor)</item>
     </string-array>
+
+    <string-array name="open_source_fragment_item">
+        <item>开源框架之 - xUtils</item>
+        <item>开源框架之 - ButtonKnife</item>
+        <item>开源框架之 - EventBus</item>
+        <item>开源框架之 - Glide</item>
+        <item>开源框架之 - OkHttp</item>
+        <item>开源框架之 - Retrofit</item>
+        <item>开源框架之 - Dagger</item>
+        <item>开源框架之 - banner</item>
+    </string-array>
 </resources>
