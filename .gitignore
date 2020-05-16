@@ -1,0 +1,15 @@
+*.bin
+*.lock
+*.iml
+*.bat
+*.apk
+# app用到zip的请忽略
+*.zip
+# 自定义了local.properties的请删除这条
+local.properties
+/captures
+~$*
+gradlew
+.DS_Store
+.idea
+.gradle
