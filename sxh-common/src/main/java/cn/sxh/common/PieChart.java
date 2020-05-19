@@ -1,4 +1,4 @@
-package cn.sxh.songfox.widget;
+package cn.sxh.common;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,7 +10,8 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import cn.sxh.songfox.util.DpUtils;
+import cn.sxh.utils.DpUtils;
+
 
 /**
  * @package-name: cn.sxh.songfox.widget
@@ -22,6 +23,7 @@ import cn.sxh.songfox.util.DpUtils;
 public class PieChart extends View {
 
     private static final float RADIUS = DpUtils.dp2px(150);
+
     private static final float LENGTH = DpUtils.dp2px(20);
     private static final float PULLED_OUT_INDEX = 2;
 

@@ -1,4 +1,4 @@
-package cn.sxh.songfox.widget;
+package cn.sxh.common.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -6,12 +6,15 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathDashPathEffect;
 import android.graphics.PathMeasure;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
-import cn.sxh.songfox.util.DpUtils;
+import cn.sxh.utils.DpUtils;
+
 
 /**
  * @package-name: cn.sxh.songfox.widget
@@ -20,6 +23,7 @@ import cn.sxh.songfox.util.DpUtils;
  * @time: 2019/8/7 0007 : 14 :01
  * @project-name: songFox
  */
+@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class Dashboard extends View {
     private Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private static final int ANGLE = 120;

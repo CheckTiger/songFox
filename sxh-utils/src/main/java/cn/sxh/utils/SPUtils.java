@@ -1,4 +1,4 @@
-package cn.sxh.songfox.util;
+package cn.sxh.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
