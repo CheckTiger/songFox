@@ -9,9 +9,9 @@ package cn.sxh.base.okhttp;
  */
 public final class Request {
 
-    final HttpUrl url;
-    final String method;
-    final Headers headers;
-    final RequestBody body;
-    final Object tag;
+//    final HttpUrl url;
+//    final String method;
+//    final Headers headers;
+//    final RequestBody body;
+//    final Object tag;
 }
