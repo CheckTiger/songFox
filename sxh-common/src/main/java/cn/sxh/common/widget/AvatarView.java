@@ -1,4 +1,4 @@
-package cn.sxh.songfox.widget;
+package cn.sxh.common.widget;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,13 +9,16 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.graphics.Xfermode;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
-import cn.sxh.songfox.R;
-import cn.sxh.songfox.util.DpUtils;
+import cn.sxh.common.R;
+import cn.sxh.utils.DpUtils;
+
 
 /**
  * @package-name: cn.sxh.songfox.widget
@@ -47,6 +50,7 @@ public class AvatarView extends View {
         saveArea.set(PADDING, PADDING, PADDING + WIDTH, PADDING + WIDTH);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -62,11 +66,11 @@ public class AvatarView extends View {
     private Bitmap getAvatar(int width) {
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(getResources(), R.mipmap.love1, options);
+        BitmapFactory.decodeResource(getResources(), R.mipmap.love, options);
         options.inJustDecodeBounds = false;
         options.inDensity = options.outWidth;
         options.inTargetDensity = width;
-        return BitmapFactory.decodeResource(getResources(), R.mipmap.love1, options);
+        return BitmapFactory.decodeResource(getResources(), R.mipmap.love, options);
     }
 
 }

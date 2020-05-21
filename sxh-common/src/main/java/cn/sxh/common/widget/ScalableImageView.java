@@ -1,4 +1,4 @@
-package cn.sxh.songfox.widget;
+package cn.sxh.common.widget;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -9,8 +9,9 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import cn.sxh.songfox.R;
-import cn.sxh.songfox.util.DpUtils;
+import cn.sxh.common.R;
+import cn.sxh.utils.DpUtils;
+
 
 /**
  * @package-name: cn.sxh.songfox.widget
