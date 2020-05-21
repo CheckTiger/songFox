@@ -2,7 +2,7 @@ package cn.sxh.songfox.mvp.model.Impl;
 
 import android.annotation.SuppressLint;
 
-import cn.sxh.songfox.API.RetrofitManager;
+import cn.sxh.songfox.api.RetrofitManager;
 import cn.sxh.songfox.bean.FirstPageBean;
 import cn.sxh.songfox.mvp.model.UtilsFragmentModel;
 import io.reactivex.android.schedulers.AndroidSchedulers;

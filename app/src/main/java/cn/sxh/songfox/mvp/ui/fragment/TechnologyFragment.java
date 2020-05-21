@@ -1,16 +1,25 @@
 package cn.sxh.songfox.mvp.ui.fragment;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.os.Build;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
-import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
-import cn.sxh.songfox.base.BaseFragment;
+import com.google.android.material.tabs.TabLayout;
 
-import static cn.sxh.songfox.util.AppUtil.getContext;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import cn.sxh.animation.one.AnimationFragment;
+import cn.sxh.base.BaseFragment;
+import cn.sxh.songfox.AppContext;
+import cn.sxh.songfox.R;
+import cn.sxh.songfox.adapter.TechnologyFragmentAdapter;
+import cn.sxh.technology.ViewFragment;
+import cn.sxh.technology.opensource.OpenSourceFragment;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
@@ -19,29 +28,45 @@ import static cn.sxh.songfox.util.AppUtil.getContext;
  * @time: 2019/7/3 0003 : 19 :39
  * @project-name: songFox
  */
+
+@RequiresApi(api = Build.VERSION_CODES.P)
 public class TechnologyFragment extends BaseFragment {
 
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        TextView textView = new TextView(getContext());
-        textView.setText("技术天地");
-        return textView;
-    }
+    private TabLayout mTabLayout;
+    private ViewPager mViewPager;
 
     @Override
     protected int getContentView() {
-        return 0;
+        return R.layout.technology_fragment_layout;
     }
 
     @Override
     protected void initUI(View view) {
-
+        mTabLayout = view.findViewById(R.id.tabLayout);
+        mViewPager = view.findViewById(R.id.viewPager);
     }
 
     @Override
     protected void initData() {
+        initTabTitlesAndFragment();
+    }
 
+
+    private void initTabTitlesAndFragment() {
+        List<String> tabTitle = Arrays.asList(AppContext.getInstance().
+                getResources().getStringArray(R.array.tab_layout_titles));
+        List<Fragment> fragmentList = new ArrayList<>();
+        fragmentList.add(new ViewFragment());
+        fragmentList.add(new OpenSourceFragment());
+        fragmentList.add(new AnimationFragment());
+        fragmentList.add(new QuestionFragment());
+        fragmentList.add(new UtilsFragment());
+        fragmentList.add(new UtilsFragment());
+        TechnologyFragmentAdapter myFragmentAdapter = new TechnologyFragmentAdapter(getFragmentManager(), fragmentList, tabTitle);
+
+        mViewPager.setAdapter(myFragmentAdapter);
+
+        mTabLayout.setupWithViewPager(mViewPager);
     }
 }
