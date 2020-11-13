@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -60,7 +61,9 @@ public class UIViewFragment extends BaseFragment implements ContentAdapter.OnCon
         horScrollview = view.findViewById(R.id.hor_scrollview);
         recyclerContent = view.findViewById(R.id.recycler_content);
 
-
+        //添加Android自带的分割线
+        rvTabRight.addItemDecoration(new DividerItemDecoration(getContext(),DividerItemDecoration.HORIZONTAL));
+        recyclerContent.addItemDecoration(new DividerItemDecoration(getContext(),DividerItemDecoration.VERTICAL));
 
         //处理顶部标题部分
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
@@ -68,9 +71,11 @@ public class UIViewFragment extends BaseFragment implements ContentAdapter.OnCon
         rvTabRight.setLayoutManager(linearLayoutManager);
         TopTabAdpater topTabAdpater = new TopTabAdpater(getContext());
         rvTabRight.setAdapter(topTabAdpater);
-        for (int i = 0; i < 5; i++) {
-            topTabs.add("标题" + i);
-        }
+        topTabs.add("委托/均价");
+        topTabs.add("委托/成交");
+        topTabs.add("状态/时间");
+        topTabs.add("操作/类型");
+        topTabs.add("操作/类型");
         topTabAdpater.setDatas(topTabs);
         //处理内容部分
         recyclerContent.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -83,7 +88,7 @@ public class UIViewFragment extends BaseFragment implements ContentAdapter.OnCon
         recyclerContent.postDelayed(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 30; i++) {
+                for (int i = 0; i < 5; i++) {
                     Entity entity = new Entity();
                     entity.setLeftTitle("腾讯控股" + i);
                     rightMoveDatas.clear();

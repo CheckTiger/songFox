@@ -31,7 +31,7 @@ public class TopTabAdpater extends RecyclerView.Adapter<TopTabAdpater.TabViewHol
     @NonNull
     @Override
     public TabViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(context).inflate(R.layout.layout_item_scroll, viewGroup, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.layout_title_item_scroll, viewGroup, false);
         return new TabViewHolder(view);
     }
 

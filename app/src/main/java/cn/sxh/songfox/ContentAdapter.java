@@ -58,13 +58,14 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ItemView
     @Override
     public void onBindViewHolder(@NonNull final ItemViewHolder itemViewHolder, int i) {
         itemViewHolder.tvLeftTitle.setText(datas.get(i).getLeftTitle());
+        itemViewHolder.tvLeftCode.setText(datas.get(i).getLeftTitle());
         //右边滑动部分
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         itemViewHolder.rvItemRight.setLayoutManager(linearLayoutManager);
         itemViewHolder.rvItemRight.setHasFixedSize(true);
         RightScrollAdapter rightScrollAdapter = new RightScrollAdapter(context);
-        rightScrollAdapter.setDatas(datas.get(i).getRightDatas());
+        rightScrollAdapter.setDatas(datas);
         itemViewHolder.rvItemRight.setAdapter(rightScrollAdapter);
         //缓存当前holder
         if (!mViewHolderList.contains(itemViewHolder)) {
@@ -111,6 +112,7 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ItemView
     }
     public class ItemViewHolder extends RecyclerView.ViewHolder {
         TextView tvLeftTitle;
+        TextView tvLeftCode;
         RecyclerView rvItemRight;
         public CustomHorizontalScrollView horItemScrollview;
         private boolean isLayoutFinish;//自定义字段,用于标记layout
@@ -126,6 +128,7 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ItemView
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             tvLeftTitle = itemView.findViewById(R.id.tv_left_title);
+            tvLeftCode = itemView.findViewById(R.id.tv_stock_code);
             rvItemRight = itemView.findViewById(R.id.rv_item_right);
             horItemScrollview = itemView.findViewById(R.id.hor_item_scrollview);
         }

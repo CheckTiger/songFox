@@ -20,13 +20,13 @@ public class RightScrollAdapter extends RecyclerView.Adapter<RightScrollAdapter.
 
 
     private Context context;
-    private List<String> rightDatas;
+    private List<Entity> rightDatas;
 
     public RightScrollAdapter(Context context) {
         this.context = context;
     }
 
-    public void setDatas(List<String> rightDatas) {
+    public void setDatas(List<Entity> rightDatas) {
         this.rightDatas = rightDatas;
         notifyDataSetChanged();
     }
@@ -41,7 +41,8 @@ public class RightScrollAdapter extends RecyclerView.Adapter<RightScrollAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull ScrollViewHolder scrollViewHolder, int i) {
-        scrollViewHolder.mTvScrollItem.setText(rightDatas.get(i));
+        scrollViewHolder.mTvScrollItem.setText(rightDatas.get(i).getLeftTitle());
+        scrollViewHolder.mTvScrollItem1.setText(rightDatas.get(i).getLeftTitle());
     }
 
     @Override
@@ -52,10 +53,12 @@ public class RightScrollAdapter extends RecyclerView.Adapter<RightScrollAdapter.
     class ScrollViewHolder extends RecyclerView.ViewHolder {
 
         TextView mTvScrollItem;
+        TextView mTvScrollItem1;
 
         public ScrollViewHolder(@NonNull View itemView) {
             super(itemView);
             mTvScrollItem = itemView.findViewById(R.id.tv_right_scroll);
+            mTvScrollItem1 = itemView.findViewById(R.id.tv_right_scroll1);
 
         }
     }
