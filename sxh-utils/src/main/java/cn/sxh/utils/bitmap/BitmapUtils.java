@@ -1,4 +1,4 @@
-package cn.sxh.utils;
+package cn.sxh.utils.bitmap;
 
 import android.app.Activity;
 import android.content.Context;
