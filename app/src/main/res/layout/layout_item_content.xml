@@ -1,53 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
-    android:orientation="horizontal">
-
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:paddingLeft="@dimen/dp_5"
-        android:orientation="vertical">
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:orientation="horizontal">
 
-        <TextView
-            android:gravity="center_vertical|left"
-            android:id="@+id/tv_left_title"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="股票代码"
-            android:textColor="#000000" />
-        <TextView
-            android:gravity="center_vertical|left"
-            android:id="@+id/tv_stock_code"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="股票代码"
-            android:textColor="#000000" />
-    </LinearLayout>
-    <cn.sxh.songfox.CustomHorizontalScrollView
-        android:id="@+id/hor_item_scrollview"
-        android:overScrollMode="never"
-        android:scrollbars="none"
-        android:layout_width="0dp"
-        android:layout_weight="4"
-        android:layout_height="match_parent">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <cn.sxh.songfox.CustomHorizontalScrollView
+            android:id="@+id/hor_item_scrollview"
+            android:focusable="false"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_width="0dp"
+            android:layout_weight="4"
             android:layout_height="match_parent">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_item_right"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:overScrollMode="never"
-                android:scrollbars="none">
+                android:layout_height="match_parent">
 
-            </androidx.recyclerview.widget.RecyclerView>
-        </RelativeLayout>
-    </cn.sxh.songfox.CustomHorizontalScrollView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_item_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+        </cn.sxh.songfox.CustomHorizontalScrollView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <TextView
+            android:text="改单"
+            android:textSize="@dimen/dp_20"
+            android:textColor="@color/common_red"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="撤单"
+            android:textSize="@dimen/dp_20"
+            android:textColor="@color/common_red"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="行情"
+            android:textSize="@dimen/dp_20"
+            android:textColor="@color/common_red"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
 </LinearLayout>

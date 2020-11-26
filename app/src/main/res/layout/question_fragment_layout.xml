@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:weightSum="4">
-        <androidx.recyclerview.widget.RecyclerView
+        <ListView
             android:id="@+id/tools_fragment_listView"
             android:layout_width="0dp"
             android:layout_height="match_parent"

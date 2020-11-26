@@ -1,10 +1,12 @@
 package cn.sxh.songfox;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -57,8 +59,6 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ItemView
 
     @Override
     public void onBindViewHolder(@NonNull final ItemViewHolder itemViewHolder, int i) {
-        itemViewHolder.tvLeftTitle.setText(datas.get(i).getLeftTitle());
-        itemViewHolder.tvLeftCode.setText(datas.get(i).getLeftTitle());
         //右边滑动部分
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
@@ -96,6 +96,13 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ItemView
                 }
             }
         });
+
+        itemViewHolder.itemView.setOnClickListener(v1 -> {
+            Entity entity = datas.get(i);
+            if (listener != null) {
+                listener.onClick(i);
+            }
+        });
     }
 
     @Override
@@ -110,10 +117,12 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ItemView
     public int getOffestX() {
         return offestX;
     }
+
     public class ItemViewHolder extends RecyclerView.ViewHolder {
         TextView tvLeftTitle;
         TextView tvLeftCode;
         RecyclerView rvItemRight;
+        LinearLayout rvLinearLayout;
         public CustomHorizontalScrollView horItemScrollview;
         private boolean isLayoutFinish;//自定义字段,用于标记layout
 
@@ -127,10 +136,40 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ItemView
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvLeftTitle = itemView.findViewById(R.id.tv_left_title);
-            tvLeftCode = itemView.findViewById(R.id.tv_stock_code);
+            rvLinearLayout = itemView.findViewById(R.id.ll_content);
             rvItemRight = itemView.findViewById(R.id.rv_item_right);
             horItemScrollview = itemView.findViewById(R.id.hor_item_scrollview);
         }
     }
+
+
+
+
+    //第一步 定义接口
+    public interface OnItemClickListener {
+        void onClick(int position);
+    }
+
+    private OnItemClickListener listener;
+
+    //第二步， 写一个公共的方法
+    public void setOnItemClickListener(OnItemClickListener listener) {
+        this.listener = listener;
+    }
+
+
+
+
+    public interface OnItemLongClickListener {
+        void onClick(int position);
+    }
+
+    private OnItemLongClickListener longClickListener;
+
+    public void setOnItemLongClickListener(OnItemLongClickListener longClickListener) {
+        this.longClickListener = longClickListener;
+    }
+
+
+
 }

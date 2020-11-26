@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -56,7 +57,7 @@ public class UIViewFragment extends BaseFragment implements ContentAdapter.OnCon
     @Override
     protected void initUI(View view) {
         llTopRoot = view.findViewById(R.id.ll_top_root);
-        tvLeftTitle = view.findViewById(R.id.tv_left_title);
+//        tvLeftTitle = view.findViewById(R.id.tv_left_title);
         rvTabRight = view.findViewById(R.id.rv_tab_right);
         horScrollview = view.findViewById(R.id.hor_scrollview);
         recyclerContent = view.findViewById(R.id.recycler_content);
@@ -101,6 +102,13 @@ public class UIViewFragment extends BaseFragment implements ContentAdapter.OnCon
                 contentAdapter.setDatas(mEntities);
             }
         }, 1500);
+
+
+        contentAdapter.setOnItemClickListener(position ->
+                Toast.makeText(getContext(), "click " + position, Toast.LENGTH_LONG).show());
+
+
+
 
         recyclerContent.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override

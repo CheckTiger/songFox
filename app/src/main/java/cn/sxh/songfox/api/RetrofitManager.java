@@ -1,4 +1,4 @@
-package cn.sxh.songfox.api;
+package cn.sxh.songfox.API;
 
 import java.util.concurrent.TimeUnit;
 
