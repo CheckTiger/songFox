@@ -1,4 +1,4 @@
-package cn.sxh.songfox.api;
+package cn.sxh.songfox.API;
 
 import java.util.concurrent.TimeUnit;
 
@@ -20,7 +20,7 @@ public class RetrofitManager {
     private static volatile songFoxApi foxApi;
 //    private static final String HOST = "http://v.juhe.cn/";
 //    private static final String HOST = "http://120.27.248.248:8601/hexinifs/rs/cms/ad/";
-    private static final String HOST = "http://14.136.210.42:8601/hexinifs/rs/cms/ad/";
+    private static final String HOST = "http://203.174.48.144:8601/hexinifs/rs/cms/ad/";
     public static songFoxApi getInstance(){
         if (foxApi == null) {
             Retrofit retrofit = new Retrofit.Builder()
