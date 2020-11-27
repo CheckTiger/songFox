@@ -1,4 +1,4 @@
-package cn.sxh.utils;
+package cn.sxh.utils.bank;
 
 import android.text.TextUtils;
 import android.widget.Toast;

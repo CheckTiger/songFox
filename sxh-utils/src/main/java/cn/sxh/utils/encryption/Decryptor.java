@@ -1,4 +1,4 @@
-package cn.sxh.utils;
+package cn.sxh.utils.encryption;
 
 import android.os.Build;
 import android.util.Base64;

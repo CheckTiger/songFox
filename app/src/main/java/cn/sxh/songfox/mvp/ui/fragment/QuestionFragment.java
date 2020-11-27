@@ -3,6 +3,7 @@ package cn.sxh.songfox.mvp.ui.fragment;
 import android.os.Build;
 import android.util.Log;
 import android.view.View;
+import android.widget.ListView;
 
 import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,7 +28,7 @@ import cn.sxh.base.BaseFragment;
 public class QuestionFragment extends BaseFragment {
 
     private static final String TAG = "QuestionFragment";
-    private RecyclerView mListView;
+    private ListView mListView;
     private List<String> list = new ArrayList<>();
     private UtilsFragmentAdapter fragmentAdapter;
 
@@ -46,6 +47,7 @@ public class QuestionFragment extends BaseFragment {
         list = Arrays.asList(AppContext.getInstance().
                 getResources().getStringArray(R.array.tools_fragment_item));
         fragmentAdapter = new UtilsFragmentAdapter(getContext(),list);
+        mListView.setAdapter(fragmentAdapter);
     }
     private void gotoActivity(int position) {
         Log.e(TAG, "--------->" + position);
