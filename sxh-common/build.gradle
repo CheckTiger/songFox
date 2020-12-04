@@ -32,6 +32,4 @@ dependencies {
     testImplementation config.junit
 
     api project(path: ':sxh-base')
-    api project(path: ':sxh-resource')
-    api project(path: ':sxh-utils')
 }

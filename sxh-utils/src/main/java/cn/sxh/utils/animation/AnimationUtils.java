@@ -1,4 +1,4 @@
-package cn.sxh.animation;
+package cn.sxh.utils.animation;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
