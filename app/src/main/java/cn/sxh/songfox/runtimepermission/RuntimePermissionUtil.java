@@ -19,7 +19,7 @@ import com.socks.library.KLog;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.sxh.songfox.util.AppUtil;
+import cn.sxh.utils.AppUtil;
 import cn.sxh.utils.SPUtils;
 
 /**

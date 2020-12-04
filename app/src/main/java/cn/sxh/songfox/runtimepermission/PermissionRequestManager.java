@@ -17,7 +17,7 @@ import androidx.core.app.ActivityCompat;
 
 import com.socks.library.KLog;
 
-import cn.sxh.songfox.util.AppUtil;
+import cn.sxh.utils.AppUtil;
 
 /**
  * @package-name: cn.sxh.songfox.runtimepermission

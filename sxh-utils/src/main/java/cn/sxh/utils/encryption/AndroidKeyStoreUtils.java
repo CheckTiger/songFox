@@ -1,4 +1,4 @@
-package cn.sxh.songfox.util;
+package cn.sxh.utils.encryption;
 
 import android.os.Build;
 import android.security.keystore.KeyGenParameterSpec;
