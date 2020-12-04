@@ -1,11 +1,11 @@
-package cn.sxh.songfox.API;
+package cn.sxh.common.API;
 
 import cn.sxh.base.FirstPageBean;
 import io.reactivex.Observable;
 import retrofit2.http.GET;
 
 /**
- * @package-name: cn.sxh.songfox.API
+ * @package-name: cn.sxh.common.API
  * @auther:snowFox
  * @Email:snowTigersong@gmail.com
  * @time: 2019/10/24 0024 : 10 :20

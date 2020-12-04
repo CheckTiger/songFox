@@ -1,4 +1,4 @@
-package cn.sxh.songfox.API;
+package cn.sxh.common.API;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,7 +8,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * @package-name: cn.sxh.songfox.API
+ * @package-name: cn.sxh.common.API
  * @auther:snowFox
  * @Email:snowTigersong@gmail.com
  * @time: 2019/7/24 0024 : 16 :53
