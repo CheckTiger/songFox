@@ -62,7 +62,9 @@ public class UtilsFragmentAdapter extends BaseAdapter {
     }
 
     private void initInfo(ViewHolder holder, int position) {
-        holder.mLinearLayout.setOnClickListener(view ->listener.onLinearLayoutClick(holder,position));
+        if (listener != null) {
+            holder.mLinearLayout.setOnClickListener(view ->listener.onLinearLayoutClick(holder,position));
+        }
     }
 
     private void initUIListener(ViewHolder holder, int position) {

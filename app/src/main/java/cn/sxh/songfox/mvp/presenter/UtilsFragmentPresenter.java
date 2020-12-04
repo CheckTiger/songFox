@@ -1,7 +1,7 @@
 package cn.sxh.songfox.mvp.presenter;
 
-import cn.sxh.songfox.base.UtilsFragmentView;
-import cn.sxh.songfox.bean.FirstPageBean;
+import cn.sxh.base.UtilsFragmentView;
+import cn.sxh.base.FirstPageBean;
 import cn.sxh.songfox.mvp.model.Impl.UtilsFragmentModelImpl;
 import cn.sxh.songfox.mvp.model.UtilsFragmentModel;
 

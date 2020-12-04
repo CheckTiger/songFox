@@ -18,7 +18,7 @@ import java.util.List;
 import cn.sxh.base.RecyclerViewVerticalAdapter;
 
 import cn.sxh.base.BaseFragment;
-import cn.sxh.utils.BankCheckUtil;
+import cn.sxh.utils.bank.BankCheckUtil;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment

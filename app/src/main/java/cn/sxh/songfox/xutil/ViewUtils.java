@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.view.View;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class ViewUtils {
@@ -94,7 +93,7 @@ public class ViewUtils {
                 mMethod.invoke(object, view);
             } catch (Exception e) {
                 try {
-                    mMethod.invoke(object,null);
+                    mMethod.invoke(object, (Object) null);
                 } catch (Exception e1) {
                     e1.printStackTrace();
                 }
