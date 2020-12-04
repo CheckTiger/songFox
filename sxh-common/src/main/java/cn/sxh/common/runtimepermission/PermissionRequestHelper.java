@@ -1,4 +1,4 @@
-package cn.sxh.songfox.runtimepermission;
+package cn.sxh.common.runtimepermission;
 
 import android.app.Activity;
 import android.os.Build;
@@ -16,7 +16,7 @@ public class PermissionRequestHelper {
         requestPermission(activity,new String[]{permissions},content,callback);
     }
 
-    private static void requestPermission(Activity activity, String[] permissions, String content, PermissionGrantedCallback callback) {
+    private static void requestPermission(Activity activity, String[] permissions, String content, final PermissionGrantedCallback callback) {
         if (activity == null) {
             return;
         }

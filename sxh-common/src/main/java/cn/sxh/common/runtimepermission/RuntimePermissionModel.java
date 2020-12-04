@@ -1,4 +1,4 @@
-package cn.sxh.songfox.runtimepermission;
+package cn.sxh.common.runtimepermission;
 
 /**
  * @package-name: cn.sxh.songfox.runtimepermission
