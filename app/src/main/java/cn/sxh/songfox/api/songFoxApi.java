@@ -1,6 +1,6 @@
 package cn.sxh.songfox.API;
 
-import cn.sxh.songfox.bean.FirstPageBean;
+import cn.sxh.base.FirstPageBean;
 import io.reactivex.Observable;
 import retrofit2.http.GET;
 

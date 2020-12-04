@@ -1,4 +1,5 @@
-package cn.sxh.songfox.base;
+package cn.sxh.base;
+
 
 /**
  * @package-name: cn.sxh.songfox.base
@@ -7,11 +8,7 @@ package cn.sxh.songfox.base;
  * @time: 2019/7/22 0022 : 15 :32
  * @project-name: songFox
  */
-public interface BaseView {
+public interface UtilsFragmentView {
 
-    void showProgress();
-
-    void hideProgress();
-
-    void showMsg(String message);
+    void notifyDataReceive(FirstPageBean firstPageBean);
 }

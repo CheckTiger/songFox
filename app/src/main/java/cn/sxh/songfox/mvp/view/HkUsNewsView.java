@@ -2,7 +2,7 @@ package cn.sxh.songfox.mvp.view;
 
 import java.util.List;
 
-import cn.sxh.songfox.base.BaseView;
+import cn.sxh.base.BaseView;
 import cn.sxh.songfox.mvp.entity.NewsBean;
 
 /**

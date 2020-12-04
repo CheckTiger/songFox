@@ -1,4 +1,4 @@
-package cn.sxh.songfox.bean;
+package cn.sxh.base;
 
 import java.util.List;
 

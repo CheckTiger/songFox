@@ -16,8 +16,8 @@ import cn.sxh.songfox.AppContext;
 import cn.sxh.songfox.R;
 import cn.sxh.songfox.adapter.UtilsFragmentAdapter;
 import cn.sxh.base.BaseFragment;
-import cn.sxh.songfox.base.UtilsFragmentView;
-import cn.sxh.songfox.bean.FirstPageBean;
+import cn.sxh.base.UtilsFragmentView;
+import cn.sxh.base.FirstPageBean;
 import cn.sxh.songfox.mvp.presenter.UtilsFragmentPresenter;
 
 /**
