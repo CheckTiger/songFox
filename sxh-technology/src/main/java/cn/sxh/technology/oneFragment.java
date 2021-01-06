@@ -17,6 +17,7 @@ public class oneFragment extends BaseFragment {
     private String title;
     private PDFView mPDFView;
     private int mIndex;
+    private DownLoadPdf downLoadPdf;
 
     public oneFragment(String title,int index) {
         this.title = title;
@@ -32,11 +33,18 @@ public class oneFragment extends BaseFragment {
     protected void initUI(View view) {
         mTextView = view.findViewById(R.id.animation_fragment_listView);
         mPDFView = view.findViewById(R.id.pdf_content);
+        downLoadPdf = new DownLoadPdf();
     }
 
     @Override
     protected void initData() {
         mTextView.setText(title);
+
+        mTextView.setOnClickListener(v -> {
+            downLoadPdf.setContextAndUrl(getActivity(),
+                    "https://tradeuat1.hrif.com.hk/aos/a_common/a_ajax/downloadPDF.php?fileName=1AOSFORM&fileType=PDF");
+            downLoadPdf.handlePdf();
+        });
 
         final int myPage = 0;
         //选择pdf
