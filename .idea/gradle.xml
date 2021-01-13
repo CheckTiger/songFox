@@ -13,6 +13,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/network" />
             <option value="$PROJECT_DIR$/sxh-animation" />
             <option value="$PROJECT_DIR$/sxh-base" />
             <option value="$PROJECT_DIR$/sxh-common" />
@@ -23,7 +24,6 @@
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
-        <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
     </option>
   </component>
