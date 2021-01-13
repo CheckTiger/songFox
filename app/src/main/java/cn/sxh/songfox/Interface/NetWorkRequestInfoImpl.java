@@ -9,4 +9,14 @@ public class NetWorkRequestInfoImpl implements INetworkRequestInfo {
     public boolean isDebug() {
         return BuildConfig.DEBUG;
     }
+
+    @Override
+    public String appVersionName() {
+        return "1.0.0";
+    }
+
+    @Override
+    public String appVersionCode() {
+        return "2";
+    }
 }
