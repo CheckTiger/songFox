@@ -1,4 +1,4 @@
-package cn.sxh.base.okhttp;
+package cn.sxh.network.okhttp;
 
 /**
  * @package-name: cn.sxh.base.okhttp
