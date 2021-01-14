@@ -10,7 +10,8 @@ class CommonRequestInterceptor (var requestInfo: INetworkRequestInfo): Intercept
         var builder=chain.request().newBuilder()
         builder.addHeader("os", "android")
         builder.addHeader("Source", "Source")
-        builder.addHeader("os", "android")
+        builder.addHeader("versionName", requestInfo.appVersionName())
+        builder.addHeader("versionCode", requestInfo.appVersionCode())
         return chain.proceed(builder.build())
     }
 

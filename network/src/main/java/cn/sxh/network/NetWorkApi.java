@@ -2,12 +2,16 @@ package cn.sxh.network;
 
 import java.util.HashMap;
 
+import cn.sxh.network.bean.ThsNewsBean;
 import cn.sxh.network.inter.INetworkRequestInfo;
+import cn.sxh.network.interceptor.CommonRequestInterceptor;
+import cn.sxh.network.interceptor.CommonResponseInterceptor;
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.ObservableTransformer;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -49,9 +53,22 @@ public class NetWorkApi {
             @Override
             public ObservableSource<T> apply(Observable<T> upstream) {
                 Observable<T> observable = upstream.subscribeOn(Schedulers.io())
-                        .observeOn(AndroidSchedulers.mainThread());
+                        .observeOn(AndroidSchedulers.mainThread())
+                        .map(NetWorkApi.<T>getAppErrorHandler());
                 observable.subscribe(observer);
                 return observable;
+            }
+        };
+    }
+
+    public static <T> Function<T,T> getAppErrorHandler(){
+        return new Function<T, T>() {
+            @Override
+            public T apply(T t) throws Exception {
+                if (t instanceof ThsNewsBean && ((ThsNewsBean) t).getContent() == null) {
+//                    Exceptio
+                }
+                return t;
             }
         };
     }
@@ -59,6 +76,8 @@ public class NetWorkApi {
 
     public static OkHttpClient getOkHttpClient(){
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        builder.addInterceptor(new CommonRequestInterceptor(iNetworkRequestInfo));
+        builder.addInterceptor(new CommonResponseInterceptor());
         if (iNetworkRequestInfo != null && iNetworkRequestInfo.isDebug()) {
             HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
             interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
