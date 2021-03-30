@@ -42,6 +42,6 @@
         <item>《自定义控件三部曲视图篇（六）——RecyclerView系列之三自定义LayoutManager》</item>
         <item>《自定义控件三部曲视图篇（七）——RecyclerView系列之四实现回收复用》</item>
         <item>《自定义控件三部曲视图篇（八）——RecyclerView系统之五回收复用实现方式二》</item>
-        <item>《自定义控件三部曲视图篇（九）——RecycerView系列之六实现滚动画廊控件》</item>
+        <item>《自定义控件三部曲视图篇（九）——RecyclerView系列之六实现滚动画廊控件》</item>
     </string-array>
 </resources>
