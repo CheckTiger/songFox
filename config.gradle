@@ -35,6 +35,8 @@ ext {
             flycoDialog    : "com.flyco.dialog:FlycoDialog_Lib:1.1.0@aar",
             flycoAnimation : "com.flyco.animation:FlycoAnimation_Lib:1.0.0@aar",
             pdfView        : "com.github.barteksc:android-pdf-viewer:3.2.0-beta.1",
+            rxlifecycle    : "com.trello:rxlifecycle:1.0",
+            components     : "com.trello:rxlifecycle-components:1.0",
             // ------------- Test dependencies -------------
             junit          : 'junit:junit:4.12',
             testjunit      : 'androidx.test.ext:junit:1.1.1',
