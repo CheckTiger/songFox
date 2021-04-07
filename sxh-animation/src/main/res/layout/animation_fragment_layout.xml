@@ -9,7 +9,8 @@
         android:id="@+id/animation_fragment_listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <FrameLayout
+
+    <cn.sxh.common.widget.AvatarView
         android:id="@+id/animation_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

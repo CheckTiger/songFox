@@ -36,6 +36,10 @@ public class AvatarView extends View {
     private Xfermode xfermode = new PorterDuffXfermode(PorterDuff.Mode.SRC_IN);
     private RectF saveArea = new RectF();
 
+    public AvatarView(Context context) {
+        this(context,null);
+    }
+
     public AvatarView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
