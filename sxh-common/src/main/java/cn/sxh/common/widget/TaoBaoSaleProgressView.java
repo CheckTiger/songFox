@@ -1,4 +1,4 @@
-package cn.sxh.songfox;
+package cn.sxh.common.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,6 +16,8 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 import java.text.DecimalFormat;
+
+import cn.sxh.common.R;
 
 
 public class TaoBaoSaleProgressView extends View {

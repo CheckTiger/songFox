@@ -44,4 +44,14 @@
         <item>《自定义控件三部曲视图篇（八）——RecyclerView系统之五回收复用实现方式二》</item>
         <item>《自定义控件三部曲视图篇（九）——RecyclerView系列之六实现滚动画廊控件》</item>
     </string-array>
+
+    <declare-styleable name="TaoBaoSaleProgressView">
+        <attr name="sideColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="sideWidth" format="dimension" />
+        <attr name="overText" format="string" />
+        <attr name="nearOverText" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="isNeedAnim" format="boolean" />
+    </declare-styleable>
 </resources>
