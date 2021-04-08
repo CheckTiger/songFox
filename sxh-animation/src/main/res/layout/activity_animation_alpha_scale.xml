@@ -4,14 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".one.animation_alpha_scale">
+    tools:context=".one.AlphaScaleActivity">
 
     <include layout="@layout/translate_scale_alpha_rotate" />
 
     <cn.sxh.common.widget.AvatarView
         android:id="@+id/animation_content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/dp_350"
+        android:layout_height="@dimen/dp_350"/>
 
 
 

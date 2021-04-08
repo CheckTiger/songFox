@@ -1,6 +1,5 @@
 package cn.sxh.animation.one;
 
-import android.content.Intent;
 import android.os.Build;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +14,7 @@ import java.util.List;
 import cn.sxh.animation.R;
 import cn.sxh.base.BaseFragment;
 import cn.sxh.base.RecyclerViewVerticalAdapter;
+import cn.sxh.utils.ActivityManager;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
@@ -31,6 +31,7 @@ public class AnimationFragment extends BaseFragment implements RecyclerViewVerti
     private RecyclerView mRecyclerView;
     private RecyclerViewVerticalAdapter recyclerViewVerticalAdapter;
     private static final int ALPHA_SCALE_ROTATE_TRANSLATE = 0;
+    private static final int ANDROID_ANIMATION_VIEW_INTERPOLATOR = 1;
 
     @Override
     protected int getContentView() {
@@ -63,8 +64,10 @@ public class AnimationFragment extends BaseFragment implements RecyclerViewVerti
         Log.e("sxh", "========================" + title);
         switch (position) {
             case ALPHA_SCALE_ROTATE_TRANSLATE:
-                Intent intent = new Intent(getActivity(), animation_alpha_scale.class);
-                startActivity(intent);
+                ActivityManager.gotoPage(getActivity(), AlphaScaleActivity.class);
+                break;
+            case ANDROID_ANIMATION_VIEW_INTERPOLATOR:
+                ActivityManager.gotoPage(getActivity(),InterpolatorActivity.class);
                 break;
         }
     }
