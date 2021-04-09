@@ -11,5 +11,9 @@
         <attr name="isNeedAnim" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="AutoTextView">
+        <attr name="minTextSize" format="dimension"/>
+        <attr name="defaultTextSize" format="dimension"/>
+    </declare-styleable>
 
 </resources>
