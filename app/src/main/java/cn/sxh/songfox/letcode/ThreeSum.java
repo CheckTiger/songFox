@@ -53,6 +53,17 @@ import java.util.List;
 public class ThreeSum {
 
 
+    public static void main(String[] args) {
+        int a = 15;
+        int b = 2;
+
+        a = a^b;
+        b = b^a;
+        a = a^b;
+
+        System.out.println("b = "+b);
+        System.out.println("a = "+a);
+    }
     public static List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> lists = new ArrayList<>();
         //排序
