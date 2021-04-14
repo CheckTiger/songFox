@@ -3,7 +3,7 @@ package cn.sxh.songfox.letcode;
 /**
  * 一维数组动态之和
  */
-public class LeetCode2021_1480 {
+public class LeetCode04141480 {
 
     public static void main(String[] args) {
 
