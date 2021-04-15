@@ -71,55 +71,44 @@ public class InterpolatorActivity extends AppCompatActivity implements View.OnCl
     @Override
     public void onClick(View v) {
         int id = v.getId();
+        imageView.clearAnimation();
         if (id == R.id.bt5) {
             animation = AnimationUtils.loadAnimation(InterpolatorActivity.this, R.anim.alphaanim);
-            imageView.startAnimation(animation);
         }else if (id == R.id.bt6) {
             animation = AnimationUtils.loadAnimation(InterpolatorActivity.this, R.anim.scaleanim);
-            imageView.startAnimation(animation);
         }else if (id == R.id.bt7) {
             animation = AnimationUtils.loadAnimation(InterpolatorActivity.this, R.anim.rotateanim);
-            imageView.startAnimation(animation);
         }else if (id == R.id.bt8) {
             animation = AnimationUtils.loadAnimation(InterpolatorActivity.this, R.anim.translate);
-            imageView.startAnimation(animation);
         }else if (id == R.id.bt11) {
             AccelerateDecelerateInterpolator accelerateDecelerateInterpolator = new AccelerateDecelerateInterpolator();
             animation.setInterpolator(accelerateDecelerateInterpolator);
-            imageView.startAnimation(animation);
         } else if (id == R.id.bt12) {
             AccelerateInterpolator accelerateInterpolator = new AccelerateInterpolator();
             animation.setInterpolator(accelerateInterpolator);
-            imageView.startAnimation(animation);
         } else if (id == R.id.bt13) {
             AnticipateInterpolator accelerateInterpolator = new AnticipateInterpolator();
             animation.setInterpolator(accelerateInterpolator);
-            imageView.startAnimation(animation);
         } else if (id == R.id.bt14) {
             AnticipateOvershootInterpolator accelerateInterpolator = new AnticipateOvershootInterpolator();
             animation.setInterpolator(accelerateInterpolator);
-            imageView.startAnimation(animation);
         } else if (id == R.id.bt15) {
             BounceInterpolator accelerateInterpolator = new BounceInterpolator();
             animation.setInterpolator(accelerateInterpolator);
-            imageView.startAnimation(animation);
         } else if (id == R.id.bt16) {
             CycleInterpolator accelerateInterpolator = new CycleInterpolator(0.0f);
             animation.setInterpolator(accelerateInterpolator);
-            imageView.startAnimation(animation);
         } else if (id == R.id.bt17) {
             DecelerateInterpolator accelerateInterpolator = new DecelerateInterpolator();
             animation.setInterpolator(accelerateInterpolator);
-            imageView.startAnimation(animation);
         } else if (id == R.id.bt18) {
             LinearInterpolator accelerateInterpolator = new LinearInterpolator();
             animation.setInterpolator(accelerateInterpolator);
-            imageView.startAnimation(animation);
         } else if (id == R.id.bt19) {
             OvershootInterpolator accelerateInterpolator = new OvershootInterpolator();
             animation.setInterpolator(accelerateInterpolator);
-            imageView.startAnimation(animation);
         }
+        imageView.startAnimation(animation);
 
     }
 }
