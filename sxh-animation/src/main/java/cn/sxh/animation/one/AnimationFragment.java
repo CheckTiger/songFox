@@ -34,6 +34,7 @@ public class AnimationFragment extends BaseFragment implements RecyclerViewVerti
     private static final int ANDROID_ANIMATION_VIEW_INTERPOLATOR = 1;
     private static final int ANDROID_ALPHA_SCALE_ROTATE_TRANSLATE_CODE = 2;
     private static final int ANDROID_ANIMATION_VIEW_INTERPOLATOR_CODE = 3;
+    private static final int ANDROID_ANIMATION_VIEW_VALUE_OBJECT = 4;
 
     @Override
     protected int getContentView() {
@@ -71,6 +72,9 @@ public class AnimationFragment extends BaseFragment implements RecyclerViewVerti
             case ANDROID_ANIMATION_VIEW_INTERPOLATOR:
             case ANDROID_ANIMATION_VIEW_INTERPOLATOR_CODE:
                 ActivityManager.gotoPage(getActivity(), InterpolatorActivity.class);
+                break;
+            case ANDROID_ANIMATION_VIEW_VALUE_OBJECT:
+                ActivityManager.gotoPage(getActivity(), ValueAnimatorActivity.class);
                 break;
         }
     }
