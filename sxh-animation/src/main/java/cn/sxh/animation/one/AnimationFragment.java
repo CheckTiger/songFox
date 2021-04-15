@@ -25,13 +25,15 @@ import cn.sxh.utils.ActivityManager;
  */
 
 @RequiresApi(api = Build.VERSION_CODES.P)
-public class AnimationFragment extends BaseFragment implements RecyclerViewVerticalAdapter.OnRecyclerViewItemClickListener{
+public class AnimationFragment extends BaseFragment implements RecyclerViewVerticalAdapter.OnRecyclerViewItemClickListener {
 
 
     private RecyclerView mRecyclerView;
     private RecyclerViewVerticalAdapter recyclerViewVerticalAdapter;
     private static final int ALPHA_SCALE_ROTATE_TRANSLATE = 0;
     private static final int ANDROID_ANIMATION_VIEW_INTERPOLATOR = 1;
+    private static final int ANDROID_ALPHA_SCALE_ROTATE_TRANSLATE_CODE = 2;
+    private static final int ANDROID_ANIMATION_VIEW_INTERPOLATOR_CODE = 3;
 
     @Override
     protected int getContentView() {
@@ -60,14 +62,15 @@ public class AnimationFragment extends BaseFragment implements RecyclerViewVerti
 
     @Override
     public void dispatchListener(int position, String title) {
-        Log.e("sxh", "========================" + position);
-        Log.e("sxh", "========================" + title);
+        Log.e("sxh", position + "==============" + title);
         switch (position) {
             case ALPHA_SCALE_ROTATE_TRANSLATE:
+            case ANDROID_ALPHA_SCALE_ROTATE_TRANSLATE_CODE:
                 ActivityManager.gotoPage(getActivity(), AlphaScaleActivity.class);
                 break;
             case ANDROID_ANIMATION_VIEW_INTERPOLATOR:
-                ActivityManager.gotoPage(getActivity(),InterpolatorActivity.class);
+            case ANDROID_ANIMATION_VIEW_INTERPOLATOR_CODE:
+                ActivityManager.gotoPage(getActivity(), InterpolatorActivity.class);
                 break;
         }
     }
