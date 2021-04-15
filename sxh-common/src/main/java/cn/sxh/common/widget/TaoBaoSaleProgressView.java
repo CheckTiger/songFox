@@ -21,8 +21,8 @@ import cn.sxh.common.R;
 
 
 public class TaoBaoSaleProgressView extends View {
-    private int totalCount;//商品总数
-    private int currentCount;//当前卖出数量
+    private int totalCount=100;//商品总数
+    private int currentCount=80;//当前卖出数量
     private int progressCount;//动画所需要的进度
     private float scale;//售出比列
     private int sideColor;//边框颜色

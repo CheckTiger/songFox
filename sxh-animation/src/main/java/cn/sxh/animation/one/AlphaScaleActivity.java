@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,10 +46,8 @@ public class AlphaScaleActivity extends AppCompatActivity implements View.OnClic
             animation = AnimationUtils.loadAnimation(AlphaScaleActivity.this, R.anim.scaleanim);
         } else if (id == R.id.bt3) {
             animation = AnimationUtils.loadAnimation(AlphaScaleActivity.this, R.anim.rotateanim);
-            LinearInterpolator interpolator = new LinearInterpolator();
-            animation.setInterpolator(interpolator);
         } else if (id == R.id.bt4) {
-            animation = AnimationUtils.loadAnimation(AlphaScaleActivity.this, R.anim.alphaanim);
+            animation = AnimationUtils.loadAnimation(AlphaScaleActivity.this, R.anim.translate);
         }
         avatarView.startAnimation(animation);
     }

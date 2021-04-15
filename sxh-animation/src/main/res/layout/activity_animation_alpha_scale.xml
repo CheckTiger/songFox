@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".one.AlphaScaleActivity">
 
@@ -13,6 +14,13 @@
         android:layout_gravity="center_horizontal"
         android:layout_width="@dimen/dp_350"
         android:layout_height="@dimen/dp_350"/>
+
+    <cn.sxh.common.widget.TaoBaoSaleProgressView
+        android:id="@+id/taobao"
+        app:nearOverText="@string/nearOverText"
+        app:overText="@string/overText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"/>
 
 
 
