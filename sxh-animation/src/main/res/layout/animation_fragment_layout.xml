@@ -10,8 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <cn.sxh.common.widget.AvatarView
-        android:id="@+id/animation_content"
+    <cn.sxh.common.widget.AutoTextView
+        android:id="@+id/title"
+        android:textColor="@color/primary_text"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"/>
+    <WebView
+        android:id="@+id/wv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
