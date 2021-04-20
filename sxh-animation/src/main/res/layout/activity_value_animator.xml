@@ -13,7 +13,7 @@
         android:layout_height="@dimen/dp_350" />
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="@dimen/dp_40">
         <TextView
             android:id="@+id/start"
             android:text="start anim"
@@ -43,6 +43,50 @@
             android:layout_width="@dimen/dp_80"
             android:layout_height="@dimen/dp_40"/>
     </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/menu"
+            style="@style/MenuStyle"
+            android:background="@drawable/pic010"/>
+
+        <Button
+            android:id="@+id/item1"
+            style="@style/MenuItemStyle"
+            android:background="@drawable/pic101"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/item2"
+            style="@style/MenuItemStyle"
+            android:background="@drawable/pic102"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/item3"
+            style="@style/MenuItemStyle"
+            android:background="@drawable/pic003"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/item4"
+            style="@style/MenuItemStyle"
+            android:background="@drawable/pic004"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/item5"
+            style="@style/MenuItemStyle"
+            android:background="@drawable/pic006"
+            android:visibility="gone"/>
+
+    </FrameLayout>
 
 
 
