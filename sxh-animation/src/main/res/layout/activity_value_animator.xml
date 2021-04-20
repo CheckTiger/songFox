@@ -1,15 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".one.ValueAnimatorActivity">
 
     <cn.sxh.common.widget.AvatarView
+        android:id="@+id/av"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="@dimen/dp_350" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/start"
+            android:text="start anim"
+            android:gravity="center"
+            android:background="@color/color_type_info"
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/show"
+            android:text="songFox"
+            android:gravity="center"
+            android:background="@color/color_type_info"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_40"
+             />
+        <TextView
+            android:id="@+id/cancel"
+            android:text="cancel anim"
+            android:gravity="center"
+            android:background="@color/color_type_info"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_40"/>
+    </RelativeLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -61,7 +61,7 @@ public class AnimationUtils {
         return mAnimationDrawable;
     }
 
-    public static Animation initAlphaAnimtion(Context context, float fromAlpha, float toAlpha,
+    public static Animation initAlphaAnimation(Context context, float fromAlpha, float toAlpha,
                                               long duration) {
         Animation alphaAnimation = new AlphaAnimation(fromAlpha, toAlpha);
         alphaAnimation.setDuration(duration);
