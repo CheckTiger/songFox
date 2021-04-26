@@ -1,5 +1,7 @@
 package cn.sxh.network;
 
+import android.os.Looper;
+
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadFactory;
@@ -30,11 +32,29 @@ public class SongFoxThreadPool {
     }
 
     public synchronized static void destroyThreadPool(){
-        SongFoxThreadPool.destroyThreadPool();
+        cn.sxh.network.SongFoxThreadPool.destroyThreadPool();
     }
 
     public synchronized static void cancelTaskFuture(ScheduledFuture<?> taskFuture, boolean mayInterruptIfRunning) {
-        SongFoxThreadPool.cancelTaskFuture(taskFuture,mayInterruptIfRunning);
+        cn.sxh.network.SongFoxThreadPool.cancelTaskFuture(taskFuture,mayInterruptIfRunning);
     }
+
+    public synchronized static void executeRunnable(Runnable runnable) {
+        cn.sxh.network.SongFoxThreadPool.executeRunnable(runnable);
+    }
+
+
+    public synchronized static void executeOnIO(Runnable runnable) {
+        if (runnable == null) {
+            return;
+        }
+        if (Thread.currentThread() != Looper.getMainLooper().getThread()) {
+            runnable.run();
+        } else {
+            executeRunnable(runnable);
+        }
+    }
+
+
 
 }
