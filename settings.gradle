@@ -1,4 +1,4 @@
-include ':network'
+include ':sxh-network'
 include ':app', ':sxh-eventbus', ':sxh-animation', ':sxh-technology', ':sxh-resource'
 include ':sxh-base'
 include ':sxh-utils'

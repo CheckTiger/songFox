@@ -32,6 +32,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation config.appcompat
-    api project(path: ':network')
+    api project(path: ':sxh-network')
     testImplementation config.junit
 }
