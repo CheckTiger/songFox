@@ -6,5 +6,5 @@ interface CallBack {
 
     fun onFail(call: Call, e: IOException)
 
-    fun onResponse(call: Call, response: Response): IOException
+    fun onResponse(call: Call, response: ShResponse): IOException
 }

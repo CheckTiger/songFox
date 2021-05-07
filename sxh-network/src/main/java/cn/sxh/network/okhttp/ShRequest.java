@@ -18,15 +18,15 @@ import static okhttp3.internal.Util.EMPTY_BYTE_ARRAY;
  * @time: 2020/4/29 0029 : 21 :00
  * @project-name: songFox
  */
-public final class Request {
+public final class ShRequest {
 
     final HttpUrl url;
     final String method;
     final Headers headers;
-    final RequestBody body;
+    final ShRequestBody body;
     final Object tag;
 
-    public Request(Builder builder) {
+    public ShRequest(Builder builder) {
         this.url = builder.url;
         this.method = builder.method;
         this.headers = builder.headers.build();
@@ -54,7 +54,7 @@ public final class Request {
         return headers.values(name);
     }
 
-    public RequestBody body() {
+    public ShRequestBody body() {
         return body;
     }
 
@@ -70,7 +70,7 @@ public final class Request {
         HttpUrl url;
         String method;
         Headers.Builder headers;
-        RequestBody body;
+        ShRequestBody body;
         Object tag;
 
         public Builder() {
@@ -79,7 +79,7 @@ public final class Request {
         }
 
 
-        public Builder(Request request) {
+        public Builder(ShRequest request) {
             this.url = request.url;
             this.method = request.method;
             this.body = request.body;
@@ -162,34 +162,34 @@ public final class Request {
             return method("HEAD", null);
         }
 
-        public Builder post(RequestBody body) {
+        public Builder post(ShRequestBody body) {
             return method("POST", body);
         }
 
-        public Builder delete(@Nullable RequestBody body) {
+        public Builder delete(@Nullable ShRequestBody body) {
             return method("DELETE", body);
         }
 
         public Builder delete() {
-            return delete(RequestBody.create(null, EMPTY_BYTE_ARRAY));
+            return delete(ShRequestBody.create(null, EMPTY_BYTE_ARRAY));
         }
 
-        public Builder put(RequestBody body) {
+        public Builder put(ShRequestBody body) {
             return method("PUT", body);
         }
 
-        public Builder patch(RequestBody body) {
+        public Builder patch(ShRequestBody body) {
             return method("PATCH", body);
         }
 
 
-        public Builder method(String method, @Nullable RequestBody body) {
+        public Builder method(String method, @Nullable ShRequestBody body) {
             if (method == null) throw new NullPointerException("method == null");
             if (method.length() == 0) throw new IllegalArgumentException("method.length() == 0");
-            if (body != null && !HttpMethod.permitsRequestBody(method)) {
+            if (body != null && !ShHttpMethod.permitsRequestBody(method)) {
                 throw new IllegalArgumentException("method " + method + " must not have a request body.");
             }
-            if (body == null && HttpMethod.requiresRequestBody(method)) {
+            if (body == null && ShHttpMethod.requiresRequestBody(method)) {
                 throw new IllegalArgumentException("method " + method + " must have a request body.");
             }
             this.method = method;
@@ -202,9 +202,9 @@ public final class Request {
             return this;
         }
 
-        public Request build() {
+        public ShRequest build() {
             if (url == null) throw new IllegalStateException("url == null");
-            return new Request(this);
+            return new ShRequest(this);
         }
 
     }

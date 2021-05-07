@@ -7,7 +7,7 @@ package cn.sxh.network.okhttp;
  * @time: 2020/4/29 0029 : 20 :44
  * @project-name: songFox
  */
-public final class HttpMethod {
+public final class ShHttpMethod {
 
     public static boolean invalidatesCache(String method) {
         return method.equals("POST")
@@ -39,5 +39,5 @@ public final class HttpMethod {
         return !method.equals("PROPFIND");
     }
 
-    private HttpMethod(){}
+    private ShHttpMethod(){}
 }

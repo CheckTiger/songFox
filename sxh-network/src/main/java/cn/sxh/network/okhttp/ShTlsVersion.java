@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public enum  TlsVersion {
+public enum ShTlsVersion {
 
     TLS_1_3("TLSv1.3"),
     TLS_1_2("TLSv1.2"),
@@ -14,11 +14,11 @@ public enum  TlsVersion {
 
     final String javaName;
 
-    TlsVersion (String javaName) {
+    ShTlsVersion(String javaName) {
         this.javaName = javaName;
     }
 
-    public static TlsVersion forJavaName(String javaName) {
+    public static ShTlsVersion forJavaName(String javaName) {
         switch (javaName) {
             case "TLSv1.3":
                 return TLS_1_3;
@@ -35,8 +35,8 @@ public enum  TlsVersion {
         throw new IllegalArgumentException("Unexpected TLS version" + javaName);
     }
 
-    static List<TlsVersion> forJavaNames(String... tlsVersions) {
-        List<TlsVersion> result = new ArrayList<>(tlsVersions.length);
+    static List<ShTlsVersion> forJavaNames(String... tlsVersions) {
+        List<ShTlsVersion> result = new ArrayList<>(tlsVersions.length);
         for (String tlsVersion : tlsVersions) {
             result.add(forJavaName(tlsVersion));
         }

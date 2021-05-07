@@ -15,10 +15,10 @@ public interface Call extends Cloneable {
      * 初始化Call回调 返回原始请求对象Request
      * @return
      */
-    Request request();
+    ShRequest request();
 
 
-    Response execute() throws IOException;
+    ShResponse execute() throws IOException;
 
     void enqueue(CallBack responseCallBack);
 
@@ -31,7 +31,7 @@ public interface Call extends Cloneable {
     Call clone();
 
     interface Factory{
-        Call newCall(Request request);
+        Call newCall(ShRequest request);
     }
 
 }

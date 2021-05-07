@@ -11,7 +11,7 @@ import okio.ByteString;
 import okio.Okio;
 import okio.Source;
 
-public abstract class RequestBody {
+public abstract class ShRequestBody {
 
     public abstract MediaType contentType();
 
@@ -22,7 +22,7 @@ public abstract class RequestBody {
     public abstract void writeTo(BufferedSink sink) throws IOException;
 
 
-    public static RequestBody create(MediaType contentType, String content) {
+    public static ShRequestBody create(MediaType contentType, String content) {
         Charset charset = Util.UTF_8;
         if (contentType != null) {
             charset = contentType.charset();
@@ -35,15 +35,15 @@ public abstract class RequestBody {
         return create(contentType, bytes);
     }
 
-    public static RequestBody create(MediaType contentType, final byte[] content) {
+    public static ShRequestBody create(MediaType contentType, final byte[] content) {
         return create(contentType, content, 0, content.length);
     }
 
-    private static RequestBody create(final MediaType contentType, final byte[] content,
-                                      final int offset, final int byteCount) {
+    private static ShRequestBody create(final MediaType contentType, final byte[] content,
+                                        final int offset, final int byteCount) {
         if (content == null) throw new NullPointerException("content == null");
         Util.checkOffsetAndCount(content.length, offset, byteCount);
-        return new RequestBody() {
+        return new ShRequestBody() {
             @Override
             public MediaType contentType() {
                 return contentType;
@@ -65,9 +65,9 @@ public abstract class RequestBody {
 
 
     /** Returns a new request body that transmits {@code content}. */
-    public static RequestBody create(
+    public static ShRequestBody create(
             final  MediaType contentType, final ByteString content) {
-        return new RequestBody() {
+        return new ShRequestBody() {
             @Override public  MediaType contentType() {
                 return contentType;
             }
@@ -83,9 +83,9 @@ public abstract class RequestBody {
     }
 
 
-    public static RequestBody create(final MediaType contentType, final File file) {
+    public static ShRequestBody create(final MediaType contentType, final File file) {
         if (file==null) throw new NullPointerException("content == null");
-        return new RequestBody() {
+        return new ShRequestBody() {
             @Override
             public MediaType contentType() {
                 return contentType;

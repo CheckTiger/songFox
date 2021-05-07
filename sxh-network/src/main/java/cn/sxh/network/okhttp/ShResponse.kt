@@ -1,5 +1,5 @@
 package cn.sxh.network.okhttp
 
-class Response {
+class ShResponse {
 
 }
