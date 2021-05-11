@@ -1,20 +1,32 @@
 package cn.sxh.network.http;
 
+import android.content.Context;
+
+import java.util.Map;
+
 public interface EngineCallBack {
 
-     void onError(Exception e);
+    void onPreExecute(Context context, Map<String, Object> params);
 
-     void onSuccess(String result);
+    void onError(Exception e);
 
-     EngineCallBack DEFAULT_CALL_BACK = new EngineCallBack() {
-         @Override
-         public void onError(Exception e) {
+    void onSuccess(String result);
 
-         }
+    EngineCallBack DEFAULT_CALL_BACK = new EngineCallBack() {
 
-         @Override
-         public void onSuccess(String result) {
+        @Override
+        public void onPreExecute(Context context, Map<String, Object> params) {
 
-         }
-     };
+        }
+
+        @Override
+        public void onError(Exception e) {
+
+        }
+
+        @Override
+        public void onSuccess(String result) {
+
+        }
+    };
 }
