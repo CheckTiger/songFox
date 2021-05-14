@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.StrictMode;
 
 import androidx.annotation.RequiresApi;
+import androidx.multidex.MultiDex;
 
 import com.socks.library.KLog;
 import com.squareup.leakcanary.LeakCanary;
@@ -88,4 +89,9 @@ public class AppContext extends Application {
         return mApplicationComponent;
     }
 
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
 }
