@@ -3,6 +3,7 @@ package cn.sxh.animation.one;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,12 +31,26 @@ public class ValueAnimatorActivity extends AppCompatActivity implements View.OnC
     private Button mItemButton4;
     private Button mItemButton5;
     private boolean mIsMenuOpen = false;
+
+    private TestServiceConnection conn;
+    private Intent intent;
+    private TestService.ITestBinder myBinder;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_value_animator);
         init();
+        initService();
     }
+
+    private void initService() {
+        intent = new Intent(this, TestService.class);
+        conn = new TestServiceConnection();
+        bindService(intent, conn, BIND_AUTO_CREATE);
+    }
+
 
     private void init() {
         mAvatarView = findViewById(R.id.av);

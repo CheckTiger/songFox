@@ -30,6 +30,8 @@
 
         <activity android:name="cn.sxh.technology.PDFViewActivity"/>
 
+        <service android:name="cn.sxh.animation.one.TestService"/>
+
     </application>
 
 </manifest>
