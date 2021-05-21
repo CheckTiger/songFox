@@ -1,4 +1,4 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +10,7 @@ import java.util.Map;
  * 你可以按任意顺序返回答案。
  * 两数之和
  */
-public class TwoNumberPlus {
+public class LeetCode011 {
 
     public static void main(String[] args) {
         int[] ints1 = solution1(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 9);

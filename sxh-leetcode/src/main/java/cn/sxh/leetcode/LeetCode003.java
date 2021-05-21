@@ -1,11 +1,11 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 /**
  * 二分查找法
  * 实现思想：
  * leetCode-35. 搜索插入位置
  */
-public class BinarySearch {
+public class LeetCode003 {
 
 
     public static void main(String[] args) {

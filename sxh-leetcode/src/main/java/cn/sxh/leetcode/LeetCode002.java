@@ -1,4 +1,4 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -92,7 +92,7 @@ import java.util.Map;
  * 0 <= s.length <= 200
  * s 由英文字母（大写和小写）、数字（0-9）、' '、'+'、'-' 和 '.' 组成
  */
-public class Atoi {
+public class LeetCode002 {
 
     public static void main(String[] args) {
         int sdfsasad = myAtoi("-91283472332");

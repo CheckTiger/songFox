@@ -1,9 +1,9 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 /**
  * 一维数组动态之和
  */
-public class LeetCode04141480 {
+public class LeetCode005 {
 
     public static void main(String[] args) {
 

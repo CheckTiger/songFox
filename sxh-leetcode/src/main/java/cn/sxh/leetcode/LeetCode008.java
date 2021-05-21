@@ -1,9 +1,9 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 /**
  * 快排算法实现 https://www.cnblogs.com/sunriseblogs/p/10009890.html
  */
-public class QuickSort {
+public class LeetCode008 {
 
     public static void main(String[] args) {
         int a[] = {5,7,1,6,4,8,3,2,8,10};

@@ -1,4 +1,4 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,7 +50,7 @@ import java.util.List;
  *
  * 三数之和（第15题）
  */
-public class ThreeSum {
+public class LeetCode010 {
 
 
     public static void main(String[] args) {

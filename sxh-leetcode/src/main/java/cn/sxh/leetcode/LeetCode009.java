@@ -1,9 +1,9 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 /**
  * 删除排序链表中重复的元素
  */
-public class SpiltNumber {
+public class LeetCode009 {
     static class ListNode{
         int val;
         ListNode(int x) {

@@ -1,9 +1,9 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 import java.util.LinkedHashMap;
 import java.util.Set;
 
-public class LinkedTest {
+public class LeetCode007 {
 
     public static void main(String[] args) {
         init();

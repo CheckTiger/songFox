@@ -1,4 +1,4 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 /**
  * 给你两个 非空 的链表，表示两个非负的整数。
@@ -8,7 +8,7 @@ package cn.sxh.songfox.letcode;
  *
  * 两数相加
  */
-public class TwoNumPlus {
+public class LeetCode012 {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package cn.sxh.songfox.letcode;
+package cn.sxh.leetcode;
 
 /**
  * 给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。
@@ -27,7 +27,7 @@ package cn.sxh.songfox.letcode;
  * 整数反转 求解
  */
 
-public class IntegerInversion {
+public class LeetCode004 {
 
     public static void main(String[] args) {
         int result = reverse(65874);
