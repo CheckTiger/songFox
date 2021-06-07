@@ -4,7 +4,7 @@ import android.content.Context;
 
 import java.util.Map;
 
-import cn.sxh.network.inter.IHttpRequest;
+import cn.sxh.network.interfaces.IHttpRequest;
 import okhttp3.OkHttpClient;
 
 public class OKHttpRequest  implements IHttpRequest {

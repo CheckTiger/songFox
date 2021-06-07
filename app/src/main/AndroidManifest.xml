@@ -32,6 +32,10 @@
 
         <service android:name="cn.sxh.animation.one.TestService"/>
 
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"/>
     </application>
 
 </manifest>

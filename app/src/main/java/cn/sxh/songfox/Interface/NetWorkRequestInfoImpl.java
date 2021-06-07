@@ -1,6 +1,6 @@
 package cn.sxh.songfox.Interface;
 
-import cn.sxh.network.inter.INetworkRequestInfo;
+import cn.sxh.network.interfaces.INetworkRequestInfo;
 import cn.sxh.songfox.BuildConfig;
 
 public class NetWorkRequestInfoImpl implements INetworkRequestInfo {

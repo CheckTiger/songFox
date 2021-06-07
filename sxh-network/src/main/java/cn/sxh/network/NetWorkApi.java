@@ -3,7 +3,7 @@ package cn.sxh.network;
 import java.util.HashMap;
 
 import cn.sxh.network.bean.ThsNewsBean;
-import cn.sxh.network.inter.INetworkRequestInfo;
+import cn.sxh.network.interfaces.INetworkRequestInfo;
 import cn.sxh.network.interceptor.CommonRequestInterceptor;
 import cn.sxh.network.interceptor.CommonResponseInterceptor;
 import io.reactivex.Observable;

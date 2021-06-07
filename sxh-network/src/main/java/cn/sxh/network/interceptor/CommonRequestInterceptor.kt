@@ -1,6 +1,6 @@
 package cn.sxh.network.interceptor
 
-import cn.sxh.network.inter.INetworkRequestInfo
+import cn.sxh.network.interfaces.INetworkRequestInfo
 import okhttp3.Interceptor
 import okhttp3.Response
 

@@ -1,6 +1,7 @@
 package cn.sxh.technology.opensource;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.view.View;
 import android.widget.ListView;
 
@@ -11,11 +12,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import cn.sxh.base.BaseFragment;
 import cn.sxh.base.FirstPageBean;
 import cn.sxh.network.NetWorkApi;
 import cn.sxh.network.bean.ThsNewsBean;
+import cn.sxh.network.http.EngineCallBack;
+import cn.sxh.network.http.HttpEngine;
+import cn.sxh.network.http.HttpUtils;
 import cn.sxh.network.observer.BaseObserver;
 import cn.sxh.network.songFoxApi;
 import cn.sxh.technology.R;
@@ -39,6 +44,24 @@ public class OpenSourceFragment extends BaseFragment implements NewsView {
         mListView = view.findViewById(R.id.open_source_fragment_listView);
         presenter = new NewsPresenter(this);
         presenter.requestNews();
+        HttpUtils.with(getContext()).exchangeEngine(new HttpEngine());
+        HttpUtils.with(getContext()).host("http://www.baidu.com")
+                .execute(new EngineCallBack() {
+                    @Override
+                    public void onPreExecute(Context context, Map<String, Object> params) {
+
+                    }
+
+                    @Override
+                    public void onError(Exception e) {
+
+                    }
+
+                    @Override
+                    public void onSuccess(String result) {
+
+                    }
+                });
         NetWorkApi.getService(songFoxApi.class).getThsNews()
                 .compose(NetWorkApi.applySchedulers(new BaseObserver<ThsNewsBean>() {
                     @Override

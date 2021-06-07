@@ -1,4 +1,4 @@
-package cn.sxh.network.inter;
+package cn.sxh.network.interfaces;
 
 import android.content.Context;
 
