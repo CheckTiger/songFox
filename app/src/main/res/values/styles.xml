@@ -58,5 +58,6 @@
     <declare-styleable name="ViewStudyStepOne">
         <attr name="view_type" format="integer" />
     </declare-styleable>
+    
 
 </resources>

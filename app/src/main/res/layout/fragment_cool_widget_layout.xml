@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <cn.sxh.common.widget.FlowLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水果味奶茶"
+            android:background="@color/common_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="澳洲进口香味漂亮"
+            android:background="@color/common_red"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张无忌"
+            android:background="@color/common_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绝世神功"
+            android:background="@color/common_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="songuehu2323"
+            android:background="@color/common_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="58347843734"
+            android:background="@color/common_red"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="53443443"
+            android:background="@color/common_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5434fffsd"
+            android:background="@color/common_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_60"
+            android:text="5werwerwe"
+            android:background="@color/common_red"/>
+    </cn.sxh.common.widget.FlowLayout>
+    
+<!--    <cn.sxh.common.widget.TestView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+    <cn.sxh.common.widget.Dashboard
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"/>
+    <cn.sxh.common.widget.AvatarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

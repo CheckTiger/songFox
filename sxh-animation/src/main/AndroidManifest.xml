@@ -1,2 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.sxh.animation" />
+    package="cn.sxh.animation">
+
+    <application>
+        <activity android:name=".one.ValueAnimatorActivity"></activity>
+        <activity android:name=".one.InterpolatorActivity" />
+        <activity android:name=".one.AlphaScaleActivity" />
+    </application>
+
+</manifest>

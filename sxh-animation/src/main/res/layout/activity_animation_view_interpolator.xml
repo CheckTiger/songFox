@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt5"
+            style="@style/ButtonStyle"
+            android:text="alpha"/>
+        <Button
+            android:id="@+id/bt6"
+            style="@style/ButtonStyle"
+            android:text="scale"/>
+        <Button
+            android:id="@+id/bt7"
+            style="@style/ButtonStyle"
+            android:text="rotate"/>
+        <Button
+            android:id="@+id/bt8"
+            style="@style/ButtonStyle"
+            android:text="translate"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt11"
+            style="@style/ButtonStyle"
+            android:text="AccelerateDecelerate"/>
+        <Button
+            android:id="@+id/bt12"
+            style="@style/ButtonStyle"
+            android:text="AccelerateInterpolator"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt13"
+            style="@style/ButtonStyle"
+            android:text="AnticipateInterpolator"/>
+        <Button
+            android:id="@+id/bt14"
+            style="@style/ButtonStyle"
+            android:text="AnticipateOvershootInterpolator"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt15"
+            style="@style/ButtonStyle"
+            android:text="BounceInterpolator"/>
+        <Button
+            android:id="@+id/bt16"
+            style="@style/ButtonStyle"
+            android:text="CycleInterpolator"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt17"
+            style="@style/ButtonStyle"
+            android:text="DecelerateInterpolator"/>
+        <Button
+            android:id="@+id/bt18"
+            style="@style/ButtonStyle"
+            android:text="LinearInterpolator"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/primary_text"
+            android:text="OvershootInterpolator"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

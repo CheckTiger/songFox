@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ui</string>
+    <string name="nearOverText">即将售罄</string>
+    <string name="overText">已售罄</string>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dp_10</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
 </resources>

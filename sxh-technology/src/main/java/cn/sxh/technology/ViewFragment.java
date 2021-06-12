@@ -2,10 +2,7 @@ package cn.sxh.technology;
 
 import android.os.Build;
 import android.util.Log;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.FragmentManager;
@@ -13,11 +10,15 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.socks.library.KLog;
+
 import java.util.Arrays;
 import java.util.List;
 
-import cn.sxh.base.BaseFragment;
 import cn.sxh.base.RecyclerViewVerticalAdapter;
+
+import cn.sxh.base.BaseFragment;
+import cn.sxh.utils.bank.BankCheckUtil;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
@@ -28,7 +29,7 @@ import cn.sxh.base.RecyclerViewVerticalAdapter;
  */
 
 @RequiresApi(api = Build.VERSION_CODES.P)
-public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAdapter.OnRecyelerViewItemClickListener {
+public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAdapter.OnRecyclerViewItemClickListener {
 
 
     private RecyclerView mRecyclerView;
@@ -45,7 +46,7 @@ public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAd
     protected void initUI(View view) {
         mRecyclerView = view.findViewById(R.id.view_fragment_listView);
         recyclerViewVerticalAdapter = new RecyclerViewVerticalAdapter(getContext());
-        recyclerViewVerticalAdapter.setOnRecyelerViewItemClickListener(this);
+        recyclerViewVerticalAdapter.setOnRecyclerViewItemClickListener(this);
     }
 
 
@@ -62,22 +63,18 @@ public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAd
     }
 
     @Override
-    public void dispatchListener(int position) {
-        Log.e("sxh", "点击的item位置：" + position);
+    public void dispatchListener(int position,String title) {
+        Log.e("sxh", "========================" + position);
+        Log.e("sxh", "========================" + title);
         FragmentManager manager = getChildFragmentManager();
         FragmentTransaction fragmentTransaction = manager.beginTransaction();
         hideTagFragment(fragmentTransaction);
-        switch (position) {
-            case 0:
-                if (fragment == null) {
-                    fragment = new oneFragment();
-                    fragmentTransaction.add(R.id.view_content, fragment);
-                } else {
-                    fragmentTransaction.show(fragment);
-                }
-                break;
-        }
+        fragment = null;
+        fragment = new oneFragment(title,position);
+        fragmentTransaction.add(R.id.view_content, fragment);
+        fragmentTransaction.show(fragment);
         fragmentTransaction.commit();
+        KLog.e("sxh","====="+BankCheckUtil.checkBankcard("410327198905012014"));
     }
 
 

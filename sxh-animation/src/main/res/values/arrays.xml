@@ -42,6 +42,57 @@
         <item>《自定义控件三部曲视图篇（六）——RecyclerView系列之三自定义LayoutManager》</item>
         <item>《自定义控件三部曲视图篇（七）——RecyclerView系列之四实现回收复用》</item>
         <item>《自定义控件三部曲视图篇（八）——RecyclerView系统之五回收复用实现方式二》</item>
-        <item>《自定义控件三部曲视图篇（九）——RecycerView系列之六实现滚动画廊控件》</item>
+        <item>《自定义控件三部曲视图篇（九）——RecyclerView系列之六实现滚动画廊控件》</item>
     </string-array>
+
+    <string-array name="animation_fragment_item_url">
+        <item>https://blog.csdn.net/harvic880925/article/details/50549385</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/50598322</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/50752838</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/50759059</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/50763286</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/50785786</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/50985596</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/50988685</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/38875149</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/38926877</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/39056701</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/39080931</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/50423762</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/50995587</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51010839</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51187277</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51253944</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51264653</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51284710</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51288006</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51317746</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51332494</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51615221</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51818489</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/51889104</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/52039081</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/52350154</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/52653811</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/47029169</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/47035455</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/69787359</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/82656394</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/82959754</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/84789602</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/84866486</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/84979161</item>
+        <item>https://blog.csdn.net/harvic880925/article/details/86606873</item>
+    </string-array>
+
+
+    <declare-styleable name="TaoBaoSaleProgressView">
+        <attr name="sideColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="sideWidth" format="dimension" />
+        <attr name="overText" format="string" />
+        <attr name="nearOverText" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="isNeedAnim" format="boolean" />
+    </declare-styleable>
 </resources>

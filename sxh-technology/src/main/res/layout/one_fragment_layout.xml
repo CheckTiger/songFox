@@ -12,8 +12,8 @@
         android:textColor="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_45"/>
-    <FrameLayout
-        android:id="@+id/animation_content"
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdf_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

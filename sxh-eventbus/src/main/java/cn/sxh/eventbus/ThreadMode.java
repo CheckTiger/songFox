@@ -32,10 +32,10 @@ public enum ThreadMode {
     MAIN_ORDERED,
 
     /**
-     * On Android, subscriber will be called in a background thread. If posting thread is not the main thread, subscriber methods
+     * On Android, subscriber will be called in a sxh thread. If posting thread is not the main thread, subscriber methods
      * will be called directly in the posting thread. If the posting thread is the main thread, EventBus uses a single
-     * background thread, that will deliver all its events sequentially. Subscribers using this mode should try to
-     * return quickly to avoid blocking the background thread. If not on Android, always uses a background thread.
+     * sxh thread, that will deliver all its events sequentially. Subscribers using this mode should try to
+     * return quickly to avoid blocking the sxh thread. If not on Android, always uses a sxh thread.
      */
     BACKGROUND,
 

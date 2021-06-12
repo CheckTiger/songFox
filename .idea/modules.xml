@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="songFox/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/network.iml" filepath="$PROJECT_DIR$/.idea/modules/network/network.iml" group="songFox/network" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/songFox.iml" filepath="$PROJECT_DIR$/.idea/songFox.iml" group="songFox" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-animation/sxh-animation.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-animation/sxh-animation.iml" group="songFox/sxh-animation" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-base/sxh-base.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-base/sxh-base.iml" group="songFox/sxh-base" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-common/sxh-common.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-common/sxh-common.iml" group="songFox/sxh-common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-eventbus/sxh-eventbus.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-eventbus/sxh-eventbus.iml" group="songFox/sxh-eventbus" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-resource/sxh-resource.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-resource/sxh-resource.iml" group="songFox/sxh-resource" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-technology/sxh-technology.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-technology/sxh-technology.iml" group="songFox/sxh-technology" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-utils/sxh-utils.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-utils/sxh-utils.iml" group="songFox/sxh-utils" />
+    </modules>
+  </component>
+</project>

@@ -17,7 +17,7 @@ import androidx.fragment.app.Fragment;
  * @project-name: songFox
  */
 public abstract class BaseFragment extends Fragment {
-    private static final String TAG = BaseFragment.class.getSimpleName();
+    protected static final String TAG = BaseFragment.class.getSimpleName();
     protected View mRootView;//根布局
     private boolean isVisible;//控制dialog的显示与关闭
 

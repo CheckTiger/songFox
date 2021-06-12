@@ -6,11 +6,14 @@ import android.os.Build;
 import android.os.StrictMode;
 
 import androidx.annotation.RequiresApi;
+import androidx.multidex.MultiDex;
 
 import com.socks.library.KLog;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
+import cn.sxh.network.NetWorkApi;
+import cn.sxh.songfox.Interface.NetWorkRequestInfoImpl;
 import cn.sxh.songfox.di.component.ApplicationComponent;
 import cn.sxh.songfox.di.component.DaggerApplicationComponent;
 import cn.sxh.songfox.di.module.ApplicationModule;
@@ -41,6 +44,7 @@ public class AppContext extends Application {
         initStrictMode();
         KLog.init(BuildConfig.DEBUG);
         initApplicationComponent();
+        NetWorkApi.init(new NetWorkRequestInfoImpl());
 //        Bugly.init(instance, "da9e68e13a", false);
     }
 
@@ -85,4 +89,9 @@ public class AppContext extends Application {
         return mApplicationComponent;
     }
 
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
 }

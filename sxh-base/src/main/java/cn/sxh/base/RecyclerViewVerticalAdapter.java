@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.socks.library.KLog;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +18,7 @@ public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerVi
 
     private Context mContext;
     private List<String> mList = new ArrayList<>();
+    private int ItemType = 0;
 
     public RecyclerViewVerticalAdapter(Context mContext) {
         this.mContext = mContext;
@@ -41,7 +44,7 @@ public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerVi
             @Override
             public void onClick(View view) {
                 if (listener != null) {
-                    listener.dispatchListener(position);
+                    listener.dispatchListener(position,mList.get(position));
                 }
             }
         });
@@ -62,14 +65,18 @@ public class RecyclerViewVerticalAdapter extends RecyclerView.Adapter<RecyclerVi
         }
     }
 
-    public interface OnRecyelerViewItemClickListener{
-        void dispatchListener(int position);
+    public interface OnRecyclerViewItemClickListener{
+        void dispatchListener(int position,String title);
     }
 
-    public OnRecyelerViewItemClickListener listener;
+    public OnRecyclerViewItemClickListener listener;
 
-    public void setOnRecyelerViewItemClickListener(OnRecyelerViewItemClickListener onRecyelerViewItemClickListener) {
-        this.listener = onRecyelerViewItemClickListener;
+    public void setOnRecyclerViewItemClickListener(OnRecyclerViewItemClickListener onRecyclerViewItemClickListener) {
+        this.listener = onRecyclerViewItemClickListener;
+    }
+
+    public void setItemType(int itemType) {
+        this.ItemType = itemType;
     }
 
 }

@@ -1,9 +1,12 @@
 package cn.sxh.songfox.mvp.ui.fragment;
 
+import android.os.Build;
 import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
+
+import androidx.annotation.RequiresApi;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,8 +16,8 @@ import cn.sxh.songfox.AppContext;
 import cn.sxh.songfox.R;
 import cn.sxh.songfox.adapter.UtilsFragmentAdapter;
 import cn.sxh.base.BaseFragment;
-import cn.sxh.songfox.base.UtilsFragmentView;
-import cn.sxh.songfox.bean.FirstPageBean;
+import cn.sxh.base.UtilsFragmentView;
+import cn.sxh.base.FirstPageBean;
 import cn.sxh.songfox.mvp.presenter.UtilsFragmentPresenter;
 
 /**
@@ -43,6 +46,7 @@ public class UtilsFragment extends BaseFragment implements UtilsFragmentView {
         fragmentPresenter = new UtilsFragmentPresenter(this);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.P)
     @Override
     protected void initData() {
         list = Arrays.asList(AppContext.getInstance().

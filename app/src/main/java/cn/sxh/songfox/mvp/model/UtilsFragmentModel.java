@@ -1,6 +1,6 @@
 package cn.sxh.songfox.mvp.model;
 
-import cn.sxh.songfox.bean.FirstPageBean;
+import cn.sxh.base.FirstPageBean;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.model
