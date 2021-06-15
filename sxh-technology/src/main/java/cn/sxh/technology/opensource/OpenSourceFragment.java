@@ -1,7 +1,6 @@
 package cn.sxh.technology.opensource;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.view.View;
 import android.widget.ListView;
 
@@ -12,13 +11,12 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 import cn.sxh.base.BaseFragment;
 import cn.sxh.base.FirstPageBean;
 import cn.sxh.network.NetWorkApi;
 import cn.sxh.network.bean.ThsNewsBean;
-import cn.sxh.network.http.EngineCallBack;
+import cn.sxh.network.http.HttpCallBack;
 import cn.sxh.network.http.HttpEngine;
 import cn.sxh.network.http.HttpUtils;
 import cn.sxh.network.observer.BaseObserver;
@@ -46,12 +44,7 @@ public class OpenSourceFragment extends BaseFragment implements NewsView {
         presenter.requestNews();
         HttpUtils.with(getContext()).exchangeEngine(new HttpEngine());
         HttpUtils.with(getContext()).host("http://www.baidu.com")
-                .execute(new EngineCallBack() {
-                    @Override
-                    public void onPreExecute(Context context, Map<String, Object> params) {
-
-                    }
-
+                .execute(new HttpCallBack() {
                     @Override
                     public void onError(Exception e) {
 

@@ -24,6 +24,7 @@ public class HttpEngine implements IHttpEngine{
                 InputStream inputStream = httpEntity.getContent();
                 String response = HttpDataManager.conferStreamToString(inputStream);
                 Log.e("sxh", "code:" + code + "\n result: \n" + response);
+                callBack.onSuccess(response);
                 inputStream.close();
             }
         } catch (Exception e) {
