@@ -1,17 +1,15 @@
-package cn.sxh.common;
+package cn.sxh.common.annotation;
 
+import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Retention(RetentionPolicy.RUNTIME)
+@Documented
 @Target(ElementType.METHOD)
-public @interface MethodInfo {
+@Retention(RetentionPolicy.RUNTIME)
+public @interface GET {
 
-    String name() default "snow";
-
-    String data();
-
-    int age() default 27;
+    String value() default "songxuehu";
 }

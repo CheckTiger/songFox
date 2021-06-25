@@ -9,9 +9,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import cn.sxh.common.ClassInfo;
-import cn.sxh.common.FieldInfo;
-import cn.sxh.common.MethodInfo;
+import cn.sxh.common.annotation.ClassInfo;
+import cn.sxh.common.annotation.FieldInfo;
+import cn.sxh.common.annotation.MethodInfo;
 import cn.sxh.common.TestAnnotation;
 
 /**

@@ -1,17 +1,17 @@
-package cn.sxh.common;
+package cn.sxh.common.annotation;
 
-import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Documented
-@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface FieldInfo {
+@Target(ElementType.METHOD)
+public @interface MethodInfo {
 
-    String column();
-    String type();
-    String generator();
+    String name() default "snow";
+
+    String data();
+
+    int age() default 27;
 }

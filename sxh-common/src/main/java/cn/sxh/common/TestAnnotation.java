@@ -1,5 +1,9 @@
 package cn.sxh.common;
 
+import cn.sxh.common.annotation.ClassInfo;
+import cn.sxh.common.annotation.FieldInfo;
+import cn.sxh.common.annotation.MethodInfo;
+
 @ClassInfo(table = "snow")
 public class TestAnnotation {
 

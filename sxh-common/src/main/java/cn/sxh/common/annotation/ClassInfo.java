@@ -1,4 +1,4 @@
-package cn.sxh.common;
+package cn.sxh.common.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
