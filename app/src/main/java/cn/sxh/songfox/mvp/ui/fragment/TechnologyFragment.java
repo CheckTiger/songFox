@@ -19,6 +19,7 @@ import cn.sxh.songfox.AppContext;
 import cn.sxh.songfox.R;
 import cn.sxh.songfox.adapter.TechnologyFragmentAdapter;
 import cn.sxh.technology.ViewFragment;
+import cn.sxh.technology.opensource.BitmapFragment;
 import cn.sxh.technology.opensource.NetWorkFragment;
 import cn.sxh.technology.opensource.OpenSourceFragment;
 
@@ -62,7 +63,7 @@ public class TechnologyFragment extends BaseFragment {
         fragmentList.add(new OpenSourceFragment());
         fragmentList.add(new AnimationFragment());
         fragmentList.add(new NetWorkFragment());
-        fragmentList.add(new UtilsFragment());
+        fragmentList.add(new BitmapFragment());
         fragmentList.add(new UtilsFragment());
         TechnologyFragmentAdapter myFragmentAdapter = new TechnologyFragmentAdapter(getFragmentManager(), fragmentList, tabTitle);
 
