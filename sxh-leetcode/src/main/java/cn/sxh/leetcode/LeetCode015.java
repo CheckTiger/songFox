@@ -15,23 +15,6 @@ package cn.sxh.leetcode;
 public class LeetCode015 {
     private static int carry = 0;//记录进位
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public static void main(String[] args) {
 
         ListNode l1 = new ListNode(2);
