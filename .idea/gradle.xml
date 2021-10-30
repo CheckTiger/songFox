@@ -4,8 +4,7 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="delegatedBuild" value="false" />
-        <option name="testRunner" value="PLATFORM" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="1.8" />
@@ -13,14 +12,16 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/network" />
             <option value="$PROJECT_DIR$/sxh-animation" />
             <option value="$PROJECT_DIR$/sxh-base" />
             <option value="$PROJECT_DIR$/sxh-common" />
             <option value="$PROJECT_DIR$/sxh-eventbus" />
+            <option value="$PROJECT_DIR$/sxh-leetcode" />
+            <option value="$PROJECT_DIR$/sxh-network" />
             <option value="$PROJECT_DIR$/sxh-resource" />
             <option value="$PROJECT_DIR$/sxh-technology" />
             <option value="$PROJECT_DIR$/sxh-utils" />
+            <option value="$PROJECT_DIR$/sxh-word" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
