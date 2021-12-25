@@ -42,7 +42,7 @@ dependencies {
     api project(path: ':sxh-common')
     implementation config.recyclerview
     implementation config.pdfView
-    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.core:core-ktx:1.6.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {
