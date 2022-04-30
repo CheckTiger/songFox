@@ -13,63 +13,29 @@
 
         <RadioButton
             android:id="@+id/technology_zone"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:button="@null"
+            style="@style/MyRadioButton"
             android:checked="true"
-            android:gravity="center"
-            android:textColor="@color/colorPrimary"
+            android:background="@drawable/main_bottom_radiobutton_bg"
             android:text="@string/technology_zone"/>
 
         <RadioButton
             android:id="@+id/technology_ui"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:button="@null"
-            android:gravity="center"
-            android:textColor="@color/colorPrimary"
+            style="@style/MyRadioButton"
             android:text="@string/technology_ui"/>
 
         <RadioButton
             android:id="@+id/technology_widget"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:button="@null"
-            android:gravity="center"
-            android:textColor="@color/colorPrimary"
+            style="@style/MyRadioButton"
             android:text="@string/technology_widget"/>
 
         <RadioButton
             android:id="@+id/technology_tools"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:button="@null"
-            android:gravity="center"
-            android:textColor="@color/colorPrimary"
+            style="@style/MyRadioButton"
             android:text="@string/technology_tools"/>
 
         <RadioButton
             android:id="@+id/technology_question"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:button="@null"
-            android:gravity="center"
-            android:textColor="@color/colorPrimary"
+            style="@style/MyRadioButton"
             android:text="@string/technology_question"/>
 
     </RadioGroup>

@@ -85,4 +85,9 @@ public class oneFragment extends BaseFragment {
 
     }
 
+    @Override
+    protected void createPresenter() {
+
+    }
+
 }

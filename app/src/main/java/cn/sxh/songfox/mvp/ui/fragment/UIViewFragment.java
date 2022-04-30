@@ -144,6 +144,11 @@ public class UIViewFragment extends BaseFragment implements ContentAdapter.OnCon
     }
 
     @Override
+    protected void createPresenter() {
+
+    }
+
+    @Override
     public void onScroll(int offestX) {
         if (null != horScrollview) horScrollview.scrollTo(offestX, 0);
     }

@@ -58,6 +58,11 @@ public class UtilsFragment extends BaseFragment implements UtilsFragmentView {
         fragmentPresenter.getFirstPageData();
     }
 
+    @Override
+    protected void createPresenter() {
+
+    }
+
     private void gotoActivity(int position) {
         Log.e(TAG, "--------->" + position);
         fragmentPresenter.getFirstPageData();

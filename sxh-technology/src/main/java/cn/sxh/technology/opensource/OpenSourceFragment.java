@@ -84,6 +84,11 @@ public class OpenSourceFragment extends BaseFragment implements NewsView {
     }
 
     @Override
+    protected void createPresenter() {
+
+    }
+
+    @Override
     public void notifyHandleNewsData(@NotNull FirstPageBean news) {
         List<FirstPageBean.ContentBean> content = news.getContent();
 //        KLog.e(TAG, "--------->" + content.size());

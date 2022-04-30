@@ -16,10 +16,11 @@ import androidx.fragment.app.Fragment;
  * @time: 2019/7/3 0003 : 15 :12
  * @project-name: songFox
  */
-public abstract class BaseFragment extends Fragment {
+public abstract class BaseFragment<T extends BasePresenter> extends Fragment implements BaseView {
     protected static final String TAG = BaseFragment.class.getSimpleName();
     protected View mRootView;//根布局
     private boolean isVisible;//控制dialog的显示与关闭
+    protected T mPresenter;
 
     /**
      * 获取布局
@@ -44,16 +45,28 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        createPresenter();
+
+        if (mPresenter != null) {
+            mPresenter.attachView(this);
+        }
+
         initUI(view);
+
         initData();
         Log.e(TAG,"-------------------onViewCreated----------->>>>>>");
     }
 
     protected abstract void initUI(View view);
     protected abstract void initData();
+    protected abstract void createPresenter();
 
     @Override
     public void onDestroy() {
         super.onDestroy();
+        if (mPresenter != null) {
+            mPresenter.unAttachView();
+        }
     }
 }

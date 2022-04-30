@@ -54,6 +54,11 @@ public class TechnologyFragment extends BaseFragment {
         initTabTitlesAndFragment();
     }
 
+    @Override
+    protected void createPresenter() {
+
+    }
+
 
     private void initTabTitlesAndFragment() {
         List<String> tabTitle = Arrays.asList(AppContext.getInstance().

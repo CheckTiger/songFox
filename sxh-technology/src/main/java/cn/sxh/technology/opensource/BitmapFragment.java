@@ -58,6 +58,10 @@ public class BitmapFragment extends BaseFragment implements UtilsFragmentView {
 
     }
 
+    @Override
+    protected void createPresenter() {
+
+    }
 
 
     @Override

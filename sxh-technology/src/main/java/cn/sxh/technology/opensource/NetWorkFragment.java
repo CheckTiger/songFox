@@ -30,4 +30,9 @@ public class NetWorkFragment extends BaseFragment {
     protected void initData() {
 
     }
+
+    @Override
+    protected void createPresenter() {
+
+    }
 }

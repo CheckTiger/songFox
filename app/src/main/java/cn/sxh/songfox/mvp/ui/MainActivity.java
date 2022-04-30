@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         setTabSelectFragment(0);
         rg = findViewById(R.id.rg);
         rg.setOnCheckedChangeListener(this);
+        changedSelectedMenuUI();
     }
 
     private void setTabSelectFragment(int index) {
@@ -116,14 +117,17 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         switch (checkedId) {
             case R.id.technology_zone:
                 currentIndex = 0;
+                changedSelectedMenuUI();
                 setTabSelectFragment(0);
                 break;
             case R.id.technology_ui:
                 currentIndex = 1;
+                changedSelectedMenuUI();
                 setTabSelectFragment(1);
                 break;
             case R.id.technology_widget:
                 currentIndex = 2;
+                changedSelectedMenuUI();
                 setTabSelectFragment(2);
                 break;
             case R.id.technology_tools:
@@ -133,6 +137,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                 break;
             case R.id.technology_question:
                 currentIndex = 4;
+                changedSelectedMenuUI();
                 setTabSelectFragment(4);
                 break;
         }

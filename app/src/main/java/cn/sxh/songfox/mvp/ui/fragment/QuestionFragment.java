@@ -49,6 +49,12 @@ public class QuestionFragment extends BaseFragment {
         fragmentAdapter = new UtilsFragmentAdapter(getContext(),list);
         mListView.setAdapter(fragmentAdapter);
     }
+
+    @Override
+    protected void createPresenter() {
+
+    }
+
     private void gotoActivity(int position) {
         Log.e(TAG, "--------->" + position);
     }

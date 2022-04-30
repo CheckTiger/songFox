@@ -74,6 +74,11 @@ public class AnimationFragment extends BaseFragment implements RecyclerViewVerti
     }
 
     @Override
+    protected void createPresenter() {
+
+    }
+
+    @Override
     public void dispatchListener(int position, String title) {
         Log.e("sxh", position + "==============" + title);
         switch (position) {

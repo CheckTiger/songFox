@@ -63,6 +63,11 @@ public class ViewFragment extends BaseFragment implements RecyclerViewVerticalAd
     }
 
     @Override
+    protected void createPresenter() {
+
+    }
+
+    @Override
     public void dispatchListener(int position,String title) {
         Log.e("sxh", "========================" + position);
         Log.e("sxh", "========================" + title);
