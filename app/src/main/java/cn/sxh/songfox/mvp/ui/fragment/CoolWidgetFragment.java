@@ -1,13 +1,14 @@
 package cn.sxh.songfox.mvp.ui.fragment;
 
-import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import cn.sxh.base.BaseFragment;
 import cn.sxh.songfox.R;
+import cn.sxh.songfox.adapter.CoolWidgetAdapter;
 import cn.sxh.songfox.mvp.presenter.CoolWidgetFragmentContract;
 import cn.sxh.songfox.mvp.presenter.CoolWidgetFragmentPresenterImpl;
 
@@ -22,6 +23,9 @@ public class CoolWidgetFragment extends BaseFragment<CoolWidgetFragmentPresenter
         CoolWidgetFragmentContract.CoolWidgetFragmentView {
 
     private ListView mListView;
+    private CoolWidgetAdapter coolWidgetAdapter;
+    private List<String> name = new ArrayList<>();
+
     @Override
     protected int getContentView() {
         return R.layout.fragment_cool_widget_layout;
@@ -30,6 +34,8 @@ public class CoolWidgetFragment extends BaseFragment<CoolWidgetFragmentPresenter
     @Override
     protected void initUI(View view) {
         mListView = view.findViewById(R.id.weigetList);
+        coolWidgetAdapter = new CoolWidgetAdapter(getContext(), name);
+        mListView.setAdapter(coolWidgetAdapter);
     }
 
     @Override
@@ -44,8 +50,14 @@ public class CoolWidgetFragment extends BaseFragment<CoolWidgetFragmentPresenter
 
     @Override
     public void showWidgetList(List<String> result) {
-        for (int i = 0; i < result.size(); i++) {
-            Log.e(TAG, "---->" + result.get(i));
-        }
+        this.name.clear();
+        this.name.addAll(result);
+        coolWidgetAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mPresenter.requestWidgetList();
     }
 }
