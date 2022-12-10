@@ -4,8 +4,6 @@ import java.util.HashMap;
 
 import cn.sxh.network.bean.ThsNewsBean;
 import cn.sxh.network.interfaces.INetworkRequestInfo;
-import cn.sxh.network.interceptor.CommonRequestInterceptor;
-import cn.sxh.network.interceptor.CommonResponseInterceptor;
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.ObservableTransformer;
@@ -76,8 +74,8 @@ public class NetWorkApi {
 
     public static OkHttpClient getOkHttpClient(){
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
-        builder.addInterceptor(new CommonRequestInterceptor(iNetworkRequestInfo));
-        builder.addInterceptor(new CommonResponseInterceptor());
+//        builder.addInterceptor(new CommonRequestInterceptor(iNetworkRequestInfo));
+//        builder.addInterceptor(new CommonResponseInterceptor());
         if (iNetworkRequestInfo != null && iNetworkRequestInfo.isDebug()) {
             HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
             interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);

@@ -2,6 +2,38 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/github.songFox.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/github.songFox.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/github.songFox.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/github.songFox.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/github.songFox.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/github.songFox.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/github.songFox.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/github.songFox.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-animation/github.songFox.sxh-animation.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-animation/github.songFox.sxh-animation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-animation/github.songFox.sxh-animation.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-animation/github.songFox.sxh-animation.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-animation/github.songFox.sxh-animation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-animation/github.songFox.sxh-animation.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-animation/github.songFox.sxh-animation.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-animation/github.songFox.sxh-animation.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-base/github.songFox.sxh-base.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-base/github.songFox.sxh-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-base/github.songFox.sxh-base.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-base/github.songFox.sxh-base.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-base/github.songFox.sxh-base.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-base/github.songFox.sxh-base.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-base/github.songFox.sxh-base.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-base/github.songFox.sxh-base.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-common/github.songFox.sxh-common.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-common/github.songFox.sxh-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-common/github.songFox.sxh-common.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-common/github.songFox.sxh-common.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-common/github.songFox.sxh-common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-common/github.songFox.sxh-common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-common/github.songFox.sxh-common.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-common/github.songFox.sxh-common.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-eventbus/github.songFox.sxh-eventbus.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-eventbus/github.songFox.sxh-eventbus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-eventbus/github.songFox.sxh-eventbus.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-eventbus/github.songFox.sxh-eventbus.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-eventbus/github.songFox.sxh-eventbus.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-eventbus/github.songFox.sxh-eventbus.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-eventbus/github.songFox.sxh-eventbus.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-eventbus/github.songFox.sxh-eventbus.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-resource/github.songFox.sxh-resource.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-resource/github.songFox.sxh-resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-resource/github.songFox.sxh-resource.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-resource/github.songFox.sxh-resource.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-resource/github.songFox.sxh-resource.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-resource/github.songFox.sxh-resource.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-resource/github.songFox.sxh-resource.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-resource/github.songFox.sxh-resource.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-technology/github.songFox.sxh-technology.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-technology/github.songFox.sxh-technology.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-technology/github.songFox.sxh-technology.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-technology/github.songFox.sxh-technology.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-technology/github.songFox.sxh-technology.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-technology/github.songFox.sxh-technology.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-technology/github.songFox.sxh-technology.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-technology/github.songFox.sxh-technology.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-utils/github.songFox.sxh-utils.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-utils/github.songFox.sxh-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-utils/github.songFox.sxh-utils.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-utils/github.songFox.sxh-utils.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-utils/github.songFox.sxh-utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-utils/github.songFox.sxh-utils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-utils/github.songFox.sxh-utils.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-utils/github.songFox.sxh-utils.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/songFox.iml" filepath="$PROJECT_DIR$/.idea/songFox.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/songFox.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/songFox.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-animation/songFox.sxh-animation.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-animation/songFox.sxh-animation.iml" />
@@ -9,11 +41,19 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-common/songFox.sxh-common.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-common/songFox.sxh-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-eventbus/songFox.sxh-eventbus.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-eventbus/songFox.sxh-eventbus.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-leetcode/songFox.sxh-leetcode.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-leetcode/songFox.sxh-leetcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-leetcode/songFox.sxh-leetcode.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-leetcode/songFox.sxh-leetcode.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-leetcode/songFox.sxh-leetcode.test.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-leetcode/songFox.sxh-leetcode.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-network/songFox.sxh-network.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-network/songFox.sxh-network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-network/songFox.sxh-network.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-network/songFox.sxh-network.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-network/songFox.sxh-network.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-network/songFox.sxh-network.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-network/songFox.sxh-network.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-network/songFox.sxh-network.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-resource/songFox.sxh-resource.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-resource/songFox.sxh-resource.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-technology/songFox.sxh-technology.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-technology/songFox.sxh-technology.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-utils/songFox.sxh-utils.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-utils/songFox.sxh-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-word/songFox.sxh-word.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-word/songFox.sxh-word.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-word/songFox.sxh-word.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-word/songFox.sxh-word.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-word/songFox.sxh-word.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-word/songFox.sxh-word.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sxh-word/songFox.sxh-word.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sxh-word/songFox.sxh-word.unitTest.iml" />
     </modules>
   </component>
 </project>
