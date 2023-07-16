@@ -32,7 +32,6 @@
         <item>view知识关于画笔Paint学习</item>
     </string-array>
     <string-array name="tools_fragment_item">
-        <item>本页面所有的工具类来自https://github.com/AbrahamCaiJin/CommonUtilLibrary</item>
         <item>银行卡管理类</item>
         <item>SharePreference缓存数据类</item>
         <item>App数据清理工作的类</item>

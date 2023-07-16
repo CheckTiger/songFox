@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     RadioGroup rg;
     //*****************************成员区**************************************//
     private FragmentTransaction mTransaction;
-    private TechnologyFragment  technologyFragment;
-    private UIViewFragment      uiViewFragment;
-    private CoolWidgetFragment  coolWidgetFragment;
-    private UtilsFragment       utilsFragment;
-    private QuestionFragment    questionFragment;
+    private TechnologyFragment technologyFragment;
+    private UIViewFragment uiViewFragment;
+    private CoolWidgetFragment coolWidgetFragment;
+    private UtilsFragment utilsFragment;
+    private QuestionFragment questionFragment;
     //*****************************成员变量区**************************************//
     private int currentIndex = 0;
 
@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
                     mTransaction.show(questionFragment);
                 }
                 break;
-                default:
-                    break;
+            default:
+                break;
         }
         mTransaction.commit();
     }

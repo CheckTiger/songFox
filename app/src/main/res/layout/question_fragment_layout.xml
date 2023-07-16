@@ -13,11 +13,9 @@
             android:id="@+id/tools_fragment_listView"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/colorPrimaryDark"/>
+            android:layout_weight="1"/>
         <FrameLayout
             android:id="@+id/lin_fragment"
-            android:background="@color/colorPrimaryDark"
             android:layout_marginStart="@dimen/dp_5"
             android:layout_width="0dp"
             android:layout_height="match_parent"

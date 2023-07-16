@@ -51,9 +51,9 @@ public class PieChart extends View {
         for (int i = 0; i < angles.length; i++) {
             paint.setColor(colors[i]);
             canvas.save();
-            if (i == PULLED_OUT_INDEX) {
-                canvas.translate((float) Math.cos(Math.toRadians(currentAngle + angles[i] / 2)) * LENGTH ,
-                        (float) Math.sin(Math.toRadians(currentAngle + angles[i] / 2)) * LENGTH );
+            if (i == PULLED_OUT_INDEX||i==1) {
+                canvas.translate((float) Math.cos(Math.toRadians(currentAngle + angles[i] / 2)) * LENGTH,
+                        (float) Math.sin(Math.toRadians(currentAngle + angles[i] / 2)) * LENGTH);
             }
             canvas.drawArc(bounds, currentAngle, angles[i], true, paint);
             canvas.restore();

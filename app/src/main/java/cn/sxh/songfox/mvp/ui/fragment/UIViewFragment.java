@@ -1,16 +1,11 @@
 package cn.sxh.songfox.mvp.ui.fragment;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,8 +19,6 @@ import cn.sxh.songfox.CustomHorizontalScrollView;
 import cn.sxh.songfox.Entity;
 import cn.sxh.songfox.R;
 import cn.sxh.songfox.TopTabAdpater;
-import cn.sxh.songfox.adapter.UtilsFragmentAdapter;
-import cn.sxh.songfox.mvp.presenter.UtilsFragmentPresenter;
 
 /**
  * @package-name: cn.sxh.songfox.mvp.UI.fragment
